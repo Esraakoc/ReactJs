@@ -1,0 +1,56 @@
+.loginDiv {
+  margin-top: 4vw;
+  margin-left: 6vw;
+  margin-bottom: 33vw;
+}
+.login {
+  margin-bottom: 0px;
+}
+.loginLine {
+  margin-top: 0px;
+  margin-bottom: 5px;
+  background-color: #000;
+  height: 2px;
+  width: 87.5vw;
+}
+.inputEmail {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  padding-left: 25px;
+  width: 86vw;
+  height: 45px;
+  border: none;
+  border-radius: 15px;
+  background-color: #bbbb;
+}
+.inputPassword {
+  margin-bottom: 15px;
+  padding-left: 25px;
+  width: 86vw;
+  height: 45px;
+  border: none;
+  border-radius: 15px;
+  background-color: #bbbb;
+}
+.notYetRegisterDiv {
+  display: flex;
+}
+.loginNotLogin {
+  font-weight: bold;
+  font-size: large;
+}
+.loginLink {
+  font-weight: bold;
+  font-size: large;
+  margin-left: 5px;
+}
+.loginBtn {
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 5vw;
+  height: 2vw;
+  font-size: large;
+  background-color: purple;
+  color: white;
+}

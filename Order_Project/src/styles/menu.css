@@ -1,0 +1,114 @@
+.menuTitle {
+  margin-left: 100px;
+  margin-bottom: 10px;
+}
+.menuH1 {
+  margin-top: 70px;
+  margin-bottom: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: 40px;
+}
+.menuLine {
+  margin-bottom: 5px;
+  background-color: #000;
+  height: 2px;
+  width: 87.5vw;
+}
+
+.menuList {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 90px;
+  margin-top: 10px;
+  margin-right: 0px;
+  gap: 20px;
+}
+.menuLineCategory {
+  background-color: #000;
+  height: 1px;
+  width: 55vw;
+  margin-left: 18px;
+  margin-top: 35px;
+}
+.menuItems {
+  width: 50vw;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center; /* Kartları yatayda düzgün bir şekilde yerleştir */
+}
+
+.menuItem {
+  align-items: center;
+  margin-bottom: 20px; /* Kartlar arasında boşluk bırakmak için */
+  background-color: #ddd;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  border-radius: 15px;
+  width: 250px;
+  height: 250px;
+  margin: 20px;
+}
+
+.menuImage {
+  width: 250px;
+  height: 145px;
+  border-radius: 15px;
+}
+
+.menuListTitle {
+  font-size: 16px;
+  margin: 0;
+}
+
+.menuDescription {
+  font-size: 10px;
+  margin: 5px 0;
+  font-weight: bold;
+}
+.menuDetails {
+  display: flex;
+  margin-top: 15px;
+}
+
+.menuPrice {
+  margin-left: 25px;
+  font-style: normal;
+  font-size: 16px;
+  margin-top: 5px;
+}
+.menuQuantity {
+  display: flex;
+  margin-left: 50px;
+}
+.quantityValue {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 5px;
+}
+.menuButton {
+  height: 28px;
+  width: 28px;
+  border-radius: 2px;
+  font-size: 16px;
+  border: none;
+  outline: none !important;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 8px;
+  transition: 0.1s;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.MenuCart {
+  display: flex;
+  justify-content: space-between; /* İçerikleri yatayda düzgün bir şekilde yerleştir */
+  align-items: flex-start; /* İçerikleri yatayda üst tarafta hizalayın */
+  padding-right: 100px; /* Sağ iç boşluk */
+}
+.Cart {
+  margin-left: 0px;
+}

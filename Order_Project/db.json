@@ -1,0 +1,420 @@
+{
+  "pizzas": [
+    {
+      "id": "campaigns1",
+      "title": "2 Medium Pizza + 2 Algida + Pepsi ",
+      "description": "2 Medium Pizza + 2 Algida Maraş Cup + Pepsi (1L)",
+      "img": "./src/images/campaigns/2-orta-boy-pizza-2-algida-maras-cup-pepsi-1l.jpg",
+      "price": 400,
+      "quantity": 0,
+      "category": "campaigns Pizzas"
+    },
+    {
+      "id": "campaigns2",
+      "title": "Large Pizza + Çokomania + Pepsi",
+      "description": "(The trend is valid for pizzas. There is a price difference when changing the category.)",
+      "img": "./src/images/campaigns/buyuk-boy-pizza-cokomania-1-lt-pepsi.jpg",
+      "price": 380,
+      "quantity": 0,
+      "category": "campaigns Pizzas"
+    },
+    {
+      "id": "campaigns3",
+      "title": "Large Pizza + Pepsi + 2 Cartedor",
+      "description": "(The price is valid for Trend pizzas. There is a price difference when the category is changed.)",
+      "img": "./src/images/campaigns/buyuk-pizza-1-lt-icecek-2-cartedor.jpg",
+      "price": 370,
+      "quantity": 1,
+      "category": "campaigns Pizzas"
+    },
+    {
+      "id": "campaigns4",
+      "title": "Small Pizza + Fries + Pet Drink",
+      "description": "(The trend is valid for pizzas. There is a price difference when changing the category.)",
+      "img": "./src/images/campaigns/kucuk-boy-pizza-patates-pepsi.jpg",
+      "price": 360,
+      "quantity": 0,
+      "category": "campaigns Pizzas"
+    },
+    {
+      "id": "campaigns5",
+      "title": "MyBox + Bombe",
+      "description": "Rectangular Pizza + Mini Chicken + Serrated Baked Potato + Bombe + Ketchup + Mayonnaise . ",
+      "img": "./src/images/campaigns/mybox-bombe.jpg",
+      "price": 420,
+      "quantity": 0,
+      "category": "campaigns Pizzas"
+    },
+    {
+      "id": "favori1",
+      "title": "Sucuk Mixed (Medium)",
+      "description": "Pizza sauce, mozzarella cheese, sausage, green pepper, mushrooms, corn",
+      "img": "./src/images/Pfavori/sucuk-karisik.jpg",
+      "price": 220,
+      "quantity": 0,
+      "category": "favorites Pizzas"
+    },
+    {
+      "id": "favori2",
+      "title": "Pepperoni Pizza (Orta)",
+      "description": "Pizza sauce, mozzarella cheese, pepperoni",
+      "img": "./src/images/Pfavori/pepperoni-pizza.jpg",
+      "price": 190,
+      "quantity": 0,
+      "category": "favorites Pizzas"
+    },
+    {
+      "id": "favori3",
+      "title": "4 Seasons (Medium)",
+      "description": "Pizza sauce, mozzarella cheese, sausage, mushrooms, olives",
+      "img": "./src/images/Pfavori/4-mevsim.jpg",
+      "price": 170,
+      "quantity": 0,
+      "category": "favorites Pizzas"
+    },
+    {
+      "id": "trend1",
+      "title": "Farmhouse (Medium)",
+      "description": "Pizza sauce, mozzarella cheese, salami, mushrooms",
+      "img": "./src/images/Ptrend/ciftlik-evi.jpg",
+      "price": 298,
+      "quantity": 0,
+      "category": "trends Pizzas"
+    },
+    {
+      "id": "trend2",
+      "title": "Festival (Mid)",
+      "description": "Pizza sauce, mozzarella cheese, tomato, green pepper, sausage, thyme",
+      "img": "./src/images/Ptrend/festival.jpg",
+      "price": 298,
+      "quantity": 0,
+      "category": "trends Pizzas"
+    },
+    {
+      "id": "trend3",
+      "title": "Margarita (Medium)",
+      "description": "Pizza sauce, mozzarella cheese",
+      "img": "./src/images/Ptrend/margherita.jpg",
+      "price": 300,
+      "quantity": 0,
+      "category": "trends Pizzas"
+    },
+    {
+      "id": "trend4",
+      "title": "Vegetable Lover (Medium)",
+      "description": "Pizza sauce, mozzarella cheese, mushroom, green pepper, onion, tomato, corn",
+      "img": "./src/images/Ptrend/sebzesever.jpg",
+      "price": 290,
+      "quantity": 0,
+      "category": "trends Pizzas"
+    },
+    {
+      "id": "super1",
+      "title": "Spicy Meat Pizza (Medium)",
+      "description": "Pizza sauce, mozzarella cheese, sausage, mushrooms, mini kebab balls, tomato, jalapeno",
+      "img": "./src/images/Psuper/acili-etli-pizza.jpg",
+      "price": 320,
+      "quantity": 0,
+      "category": "supers Pizzas"
+    },
+    {
+      "id": "super2",
+      "title": "Meat Mixed (Medium)",
+      "description": "Pizza sauce, mozzarella cheese, salami, mini kebab balls, sausage",
+      "img": "./src/images/Psuper/bol-etli-karisik.jpg",
+      "price": 310,
+      "quantity": 0,
+      "category": "supers Pizzas"
+    },
+    {
+      "id": "super3",
+      "title": "Mixed (Medium)",
+      "description": "Pizza sauce, mozzarella cheese, salami, soudjouk, sausage, green pepper, mushroom, corn",
+      "img": "./src/images/Psuper/karisik.jpg",
+      "price": 325,
+      "quantity": 0,
+      "category": "supers Pizzas"
+    },
+    {
+      "id": "super4",
+      "title": "Super Supreme (Mid)",
+      "description": "Pizza sauce, mozzarella cheese, pepperoni, salami, mini kebab balls, mushrooms, green peppers, onions, olives",
+      "img": "./src/images/Psuper/super-supreme.jpg",
+      "price": 320,
+      "quantity": 0,
+      "category": "supers Pizzas"
+    },
+    {
+      "id": "gourmet1",
+      "title": "Hot Chicken Pizza (Medium)",
+      "description": "Pizza Sauce, mozzarella cheese, grilled chicken pieces, tomato, onion, green pepper, jalapeno",
+      "img": "./src/images/Pgourmet/acili-tavuklu-pizza.jpg",
+      "price": 330,
+      "quantity": 0,
+      "category": "gourmets Pizzas"
+    },
+    {
+      "id": "gourmet2",
+      "title": "Mediterranean (Middle)",
+      "description": "Pizza sauce, mozzarella, feta cheese, olives, tomatoes, thyme",
+      "img": "./src/images/Pgourmet/akdeniz.jpg",
+      "price": 340,
+      "quantity": 0,
+      "category": "gourmets Pizzas"
+    },
+    {
+      "id": "gourmet3",
+      "title": "BBQ Chicken (Medium)",
+      "description": "Pizza sauce, mozzarella cheese, grilled chicken pieces, barbecue sauce, onion",
+      "img": "./src/images/Pgourmet/bbq-tavuk.jpg",
+      "price": 345,
+      "quantity": 0,
+      "category": "gourmets Pizzas"
+    },
+    {
+      "id": "gourmet4",
+      "title": "Süper Sucuk (Orta)",
+      "description": "Pizza sauce, mozzarella cheese, plenty of sausage",
+      "img": "./src/images/Pgourmet/super-sucuk.jpg",
+      "price": 355,
+      "quantity": 0,
+      "category": "gourmets Pizzas"
+    },
+    {
+      "id": "gourmet5",
+      "title": "Superboll Pizza (Medium)",
+      "description": "Pizza sauce, mozzarella cheese, pepperoni, soudjouk, sausage, salami, green pepper,",
+      "img": "./src/images/Pgourmet/superboll-pizza.jpg",
+      "price": 350,
+      "quantity": 0,
+      "category": "gourmets Pizzas"
+    },
+    {
+      "id": "entree1",
+      "title": "Mini Chicken (50gr)",
+      "description": "Mini Chicken (50gr)",
+      "img": "./src/images/entree/mini-tavuk-50gr.jpg",
+      "price": 60,
+      "quantity": 0,
+      "category": "entrees"
+    },
+    {
+      "id": "entree2",
+      "title": "Mini Chicken (100 g)",
+      "description": "Mini Chicken (100 g)",
+      "img": "./src/images/entree/mini-tavuk-citir-tavuk.jpg",
+      "price": 70,
+      "quantity": 0,
+      "category": "entrees"
+    },
+    {
+      "id": "entree3",
+      "title": "Mozzarella Garlic Bread (4 Slices)",
+      "description": "Mozzarella Garlic Bread (4 Slices)",
+      "img": "./src/images/entree/mozzarellali-sarimsakli-ekmek-4-dilim.jpg",
+      "price": 80,
+      "quantity": 0,
+      "category": "entrees"
+    },
+    {
+      "id": "entree4",
+      "title": "Garlic Bread (2 Slices)",
+      "description": "Garlic Bread (2 Slices)",
+      "img": "./src/images/entree/sarimsakli-ekmek.jpg",
+      "price": 50,
+      "quantity": 0,
+      "category": "entrees"
+    },
+    {
+      "id": "entree5",
+      "title": "Garlic Bread (4 Slices)",
+      "description": "Garlic Bread (4 Slices)",
+      "img": "./src/images/entree/sarimsakli-ekmek-4-dilim.jpg",
+      "price": 60,
+      "quantity": 0,
+      "category": "entrees"
+    },
+    {
+      "id": "entree6",
+      "title": "Mozzarella Garlic Bread (2 Slices)",
+      "description": "Sausage Mozzarella Garlic Bread (2 Slices)",
+      "img": "./src/images/entree/sucuk-ekmek.png",
+      "price": 40,
+      "quantity": 0,
+      "category": "entrees"
+    },
+    {
+      "id": "entree7",
+      "title": "Garlic Bread Mozzarella (4 Slices)",
+      "description": "Garlic Bread with Sausage and Mozzarella (4 Slices)",
+      "img": "./src/images/entree/sucuklu-mozzarellali-sarimsakli-ekmek-4-dilim.jpg",
+      "price": 50,
+      "quantity": 0,
+      "category": "entrees"
+    },
+    {
+      "id": "entree8",
+      "title": "2 Chicken Wings",
+      "description": "2 Chicken Wings",
+      "img": "./src/images/entree/tavuk-kanat-2-parca.jpg",
+      "price": 40,
+      "quantity": 0,
+      "category": "entrees"
+    },
+    {
+      "id": "entree9",
+      "title": "4 Chicken Wings",
+      "description": "4 Chicken Wings",
+      "img": "./src/images/entree/tavuk-kanat-4-parca_638205406585695200.jpg",
+      "price": 60,
+      "quantity": 0,
+      "category": "entrees"
+    },
+    {
+      "id": "entree10",
+      "title": "6 Chicken Wings",
+      "description": "6 Chicken Wings",
+      "img": "./src/images/entree/tavuk-kanat-6-parca.jpg",
+      "price": 80,
+      "quantity": 0,
+      "category": "entrees"
+    },
+    {
+      "id": "entree11",
+      "title": "Medium Scalloped Potato (150 g)",
+      "description": "PMedium Scalloped Baked Potato (150 g)",
+      "img": "./src/images/entree/tirtikli-firinlanmis-patates.jpg",
+      "price": 40,
+      "quantity": 0,
+      "category": "entrees"
+    },
+    {
+      "id": "entree12",
+      "title": "Garlic Bread Mozzarella (2 Slices)",
+      "description": "Garlic Bread with Mozzarella (2 Slices)",
+      "img": "./src/images/entree/mozerallali-sarimsakli-ekmek.jpg",
+      "price": 50,
+      "quantity": 0,
+      "category": "entrees"
+    },
+    {
+      "id": "desserts1",
+      "title": "Bombe",
+      "description": "Bombe",
+      "img": "./src/images/desserts/bombe.jpg",
+      "price": 100,
+      "quantity": 0,
+      "category": "desserts"
+    },
+    {
+      "id": "desserts2",
+      "title": "Cokomania",
+      "description": "Cokomania",
+      "img": "./src/images/desserts/cokomania.jpg",
+      "price": 110,
+      "quantity": 0,
+      "category": "desserts"
+    },
+    {
+      "id": "desserts3",
+      "title": "Souffle",
+      "description": "Souffle",
+      "img": "./src/images/desserts/sufle.jpg",
+      "price": 125,
+      "quantity": 0,
+      "category": "desserts"
+    },
+    {
+      "id": "desserts4",
+      "title": "Sutlac",
+      "description": "Sutlac",
+      "img": "./src/images/desserts/sütlaç.png",
+      "price": 120,
+      "quantity": 0,
+      "category": "desserts"
+    },
+    {
+      "id": "iceCream1",
+      "title": "Carte d'Or Chocolate Dream",
+      "description": "(250 ml.)",
+      "img": "./src/images/ice-cream/carte-dor-cikolata-ruyasi.jpg",
+      "price": 30,
+      "quantity": 0,
+      "category": "iceCreams"
+    },
+    {
+      "id": "iceCream2",
+      "title": "Algida Maraş Style Cup Ice Cream",
+      "description": "(100 ml.)",
+      "img": "./src/images/ice-cream/maras-cup.jpg",
+      "price": 25,
+      "quantity": 0,
+      "category": "iceCreams"
+    },
+    {
+      "id": "drinks1",
+      "title": "Cola-Zero",
+      "description": "(250ml.)",
+      "img": "./src/images/drinks/cola-zero.png",
+      "price": 30,
+      "quantity": 0,
+      "category": "drinks"
+    },
+    {
+      "id": "drinks2",
+      "title": "Fanta",
+      "description": "(250ml.)",
+      "img": "./src/images/drinks/fanta.png",
+      "price": 30,
+      "quantity": 0,
+      "category": "drinks"
+    },
+    {
+      "id": "drinks3",
+      "title": "Ayran",
+      "description": "(400ml.)",
+      "img": "./src/images/drinks/icim-ayran.png",
+      "price": 30,
+      "quantity": 0,
+      "category": "drinks"
+    },
+    {
+      "id": "drinks4",
+      "title": "Mineral Water",
+      "description": "(200ml.)",
+      "img": "./src/images/drinks/maden-suyu.png",
+      "price": 20,
+      "quantity": 0,
+      "category": "drinks"
+    },
+    {
+      "id": "drinks5",
+      "title": "Sprite",
+      "description": "(250ml.)",
+      "img": "./src/images/drinks/sprite.png",
+      "price": 30,
+      "quantity": 0,
+      "category": "drinks"
+    },
+    {
+      "id": "drinks6",
+      "title": "Water",
+      "description": "(50ml.)",
+      "img": "./src/images/drinks/su.png",
+      "price": 10,
+      "quantity": 0,
+      "category": "drinks"
+    }
+  ],
+  "carts": [
+    {
+      "id": "campaigns3",
+      "title": "Large Pizza + Pepsi + 2 Cartedor",
+      "description": "(The price is valid for Trend pizzas. There is a price difference when the category is changed.)",
+      "img": "./src/images/campaigns/buyuk-pizza-1-lt-icecek-2-cartedor.jpg",
+      "price": 370,
+      "quantity": 1,
+      "category": "campaigns Pizzas"
+    }
+  ]
+}

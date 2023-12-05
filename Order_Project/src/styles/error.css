@@ -1,0 +1,20 @@
+.errorDiv {
+  margin-top: 4vw;
+  margin-left: 6vw;
+  margin-bottom: 33vw;
+}
+.error {
+  margin-bottom: 0px;
+}
+.errorLine {
+  margin-top: 0px;
+  margin-bottom: 5px;
+  background-color: #000;
+  height: 2px;
+  width: 87.5vw;
+}
+.errorSentence {
+  margin-top: 25px;
+  font-size: 2vw;
+  margin-bottom: 40vw;
+}

@@ -1,0 +1,73 @@
+.CartDiv {
+  margin-top: 50px;
+  background-color: #ddd;
+  width: 25%; /* Kartın yüzde genişliği, isteğinize bağlı olarak değiştirilebilir */
+  height: 25vw;
+  min-width: 500px; /* Minimum genişlik ayarı, isteğinize bağlı olarak değiştirilebilir */
+  position: fixed;
+  z-index: 2;
+  right: 0; /* Sağa hizalama */
+  overflow-y: auto; /* Eğer içerik aşarsa kaydırma çubuğu görünür */
+}
+.Cart {
+  display: flex;
+  margin-bottom: 0;
+}
+.cartWrite {
+  margin-top: 20px;
+  margin-left: 1vw;
+  font-size: 2vw;
+}
+
+.ClearCart {
+  margin-top: 15px;
+  margin-left: 10vw;
+  font-size: large;
+  font-weight: 5px;
+  border: none;
+  border-radius: 15px;
+  width: 6vw;
+  height: 3vw;
+  background-color: #ff1111;
+  color: white;
+  cursor: pointer;
+}
+.cartLine {
+  margin-top: 0;
+  margin-left: 15px;
+  background-color: #000;
+  height: 1px;
+  width: 23vw;
+}
+
+.goToCart {
+  position: fixed;
+  margin-top: 22vw;
+  width: 26vw;
+  height: 58px;
+  border: none;
+  background-color: #5a2ff3;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  cursor: pointer;
+}
+.emptyDiv {
+  margin-top: 4vw;
+  margin-left: 7vw;
+}
+.emptyIcon {
+  margin-left: 4vw;
+  font-size: 30px;
+}
+.cartLists {
+  margin-left: 1vw;
+  margin-bottom: 5vw;
+}
+.cartListLine {
+  margin-top: 0;
+  margin-left: 1px;
+  background-color: #000;
+  height: 1px;
+  width: 23vw;
+}

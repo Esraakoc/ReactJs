@@ -1,0 +1,46 @@
+.image-container {
+  display: inline-block;
+}
+div.home-logo-pizza {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.home-logo-pizza {
+  display: flex;
+  justify-content: flex-start; /* Sol kenara yaklaştır */
+  align-items: center; /* Dikey hizalamayı ayarla */
+}
+.homePizzaW {
+  font-size: 90px;
+  color: purple;
+}
+.darkened-image {
+  height: 100vh;
+  width: 98.5vw;
+  text-align: center;
+  position: relative;
+  object-fit: cover;
+  z-index: -2;
+}
+.homeLogo {
+  width: 200px;
+}
+.image-overlay {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 101vh;
+  width: 99vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  flex-direction: column;
+}
+.overlay-text {
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}

@@ -1,0 +1,69 @@
+.cartFormDiv {
+  margin-top: 4vw;
+  margin-left: 6vw;
+  margin-bottom: 33vw;
+}
+.cartForm {
+  margin-bottom: 0px;
+}
+.cartFormLine {
+  margin-top: 0px;
+  margin-bottom: 40px;
+  background-color: #000;
+  height: 2px;
+  width: 87.5vw;
+}
+.cartFMap {
+  background-color: #bbb;
+  margin-top: 20px;
+  height: 125px;
+  width: 87.5vw;
+  border: none;
+  border-radius: 10px;
+}
+.cartFImgDesc {
+  display: flex;
+}
+.cartFImg {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+.cartFContent {
+  padding-left: 30px;
+}
+.cartFTitle {
+  margin-bottom: 5px;
+}
+.cartFDesc {
+  margin-top: 5px;
+  font-weight: 100;
+  font-size: small;
+}
+.cartFPriceQuan {
+  display: flex;
+}
+.cartFPrice {
+  margin-right: 60vw;
+}
+.cartFormPrice {
+  margin-top: 40px;
+  margin-bottom: 5px;
+}
+.cartFormFee {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.cartFormTotal {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.CheckOutBtn {
+  margin-top: 30px;
+  background-color: purple;
+  color: white;
+  width: 10vw;
+  height: 2vw;
+  border: none;
+  border-radius: 10px;
+}
