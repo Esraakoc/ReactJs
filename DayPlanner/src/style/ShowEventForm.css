@@ -1,0 +1,30 @@
+.button-size {
+  width: 8vw;
+  height: 2vw;
+}
+
+.showDiv {
+  border-radius: 15px;
+  margin-right: 5vw;
+  padding: 20px 20px 20px 20px;
+  background-color: #606c38;
+  overflow-y: auto;
+  max-height: 465px;
+  width: 300px;
+}
+.showDiv h3 {
+  color: #fefae0;
+}
+.showDiv div {
+  margin-top: 20px;
+}
+.showDiv div h5 {
+  font-weight: bold;
+  color: #fefae0;
+}
+.showDiv div p {
+  margin-top: 2px;
+  margin-left: 7px;
+  font-weight: bold;
+  color: #161a1d;
+}/*# sourceMappingURL=ShowEventForm.css.map */

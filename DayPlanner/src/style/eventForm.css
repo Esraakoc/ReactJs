@@ -1,0 +1,30 @@
+.button-size, .eventFormDiv form button {
+  width: 8vw;
+  height: 2vw;
+}
+
+.commonInput, .eventFormDiv form textarea, .eventFormDiv form select, .eventFormDiv form input {
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fefae0;
+}
+
+.eventFormDiv {
+  border-radius: 15px;
+  margin-left: 5vw;
+  padding: 20px 20px 20px 20px;
+  background-color: #bc6c25;
+  width: 300px;
+}
+.eventFormDiv form h5 {
+  font-weight: bold;
+}
+.eventFormDiv form button {
+  margin-top: 1vw;
+  border: none;
+  border-radius: 5px;
+  background-color: #606c38;
+  color: #fefae0;
+  font-weight: bold;
+}/*# sourceMappingURL=eventForm.css.map */
