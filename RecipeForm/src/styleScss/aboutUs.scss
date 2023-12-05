@@ -1,0 +1,22 @@
+@import "variables";
+
+.aboutUsDiv {
+  background-color: $main-backColor;
+  padding: 7vw 25vw 50px 25vw;
+  text-align: center;
+  img {
+    @include size(50%, 200px);
+  }
+  h1 {
+    color: $main-text-color;
+  }
+  .aboutUsFlex {
+    display: $side;
+    h3 {
+      margin-top: 0px;
+    }
+    label {
+      margin-top: 2px;
+    }
+  }
+}

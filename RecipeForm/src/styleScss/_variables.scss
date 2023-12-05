@@ -1,0 +1,12 @@
+$main-backColor: #f5f6ea;
+$main-text-color: #005d8e;
+$navbar-BackColor: white;
+$side: flex;
+$block: block;
+$input-backColor: rgb(144, 199, 221);
+$hand: pointer;
+
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}

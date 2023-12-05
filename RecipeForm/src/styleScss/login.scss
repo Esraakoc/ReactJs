@@ -1,0 +1,52 @@
+@import "variables";
+.font {
+  font-weight: bold;
+  font-size: large;
+}
+.common-input {
+  @include size(86vw, 45px);
+  border: none;
+  border-radius: 15px;
+  background-color: #bbbb;
+  padding-left: 25px;
+}
+
+.loginDiv {
+  margin: 9vw 0px 33vw 6vw;
+  .login {
+    margin-bottom: 0px;
+  }
+  .loginLine {
+    margin-bottom: 5px;
+    background-color: #000;
+    @include size(87.5vw, 2px);
+  }
+  .inputEmail {
+    margin: 20px 0px 15px 0px;
+    @extend .common-input;
+  }
+  .inputPassword {
+    margin-bottom: 15px;
+    @extend .common-input;
+  }
+  .notYetRegisterDiv {
+    display: flex;
+    .loginNotLogin {
+      @extend .font;
+    }
+    .loginLink {
+      @extend .font;
+      margin-left: 5px;
+    }
+  }
+  .loginBtn {
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    @include size(5vw, 2vw);
+    @extend .font;
+    background-color: purple;
+    color: white;
+    cursor: $hand;
+  }
+}

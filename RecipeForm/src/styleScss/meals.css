@@ -1,0 +1,30 @@
+@charset "UTF-8";
+.MealsDiv {
+  background-color: #f5f6ea;
+}
+.MealsDiv .mealsMapDiv {
+  padding: 7vw 50px 0px 50px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap; /* Bu satırı ekleyin, fotoğrafların yan yana sığmasını sağlar */
+  justify-content: space-between; /* Bu satırı ekleyin, fotoğrafları eşit aralıklarla sıralar */
+}
+.MealsDiv .mealsMapDiv .mealsMap {
+  width: 30%; /* Fotoğrafın genişliğini ayarlayın, böylece her satırda 3 fotoğraf olur */
+  margin-bottom: 20px; /* İstediğiniz boşluğu ekleyin */
+}
+.MealsDiv .mealsMapDiv .mealsMap button {
+  background-color: #f5f6ea;
+  cursor: pointer;
+  border: none;
+}
+.MealsDiv .mealsMapDiv .mealsMap button:hover {
+  text-decoration: underline;
+}
+.MealsDiv .mealsMapDiv .mealsMap h1 {
+  color: #005d8e;
+}
+.MealsDiv .mealsMapDiv .mealsMap img {
+  width: 100%;
+  height: auto;
+}/*# sourceMappingURL=meals.css.map */

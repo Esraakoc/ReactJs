@@ -1,0 +1,47 @@
+@import "variables";
+
+.border {
+  border: none;
+  border-radius: 5px;
+}
+
+.addDiv {
+  padding: 7vw 0px 50px 40vw;
+  background-color: $main-backColor;
+  .addForm {
+    select {
+      @extend .border;
+      @include size(15vw, 40px);
+      background-color: $input-backColor;
+      cursor: $hand;
+    }
+    .addName {
+      @extend .border;
+      @include size(15vw, 40px);
+      background-color: $input-backColor;
+    }
+    textarea {
+      @extend .border;
+      @include size(15vw, 40px);
+      background-color: $input-backColor;
+    }
+    .DosyaSec {
+      background-color: $main-backColor;
+      cursor: $hand;
+    }
+    .addBtn {
+      margin-top: 20px;
+      text-align: center;
+      @include size(9vw, 4vh);
+      font: {
+        weight: bold;
+        size: medium;
+      }
+      color: $navbar-BackColor;
+      background-color: $main-text-color;
+      border: none;
+      border-radius: 10px;
+      cursor: $hand;
+    }
+  }
+}

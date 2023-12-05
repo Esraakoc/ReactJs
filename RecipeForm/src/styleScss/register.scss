@@ -1,0 +1,50 @@
+@import "variables";
+.common-input {
+  padding-left: 25px;
+  @include size(86vw, 45px);
+  border: none;
+  border-radius: 15px;
+  background-color: #bbbb;
+}
+.font {
+  font-weight: bold;
+  font-size: large;
+}
+.regDiv {
+  margin: 9vw 0px 33vw 6vw;
+  .reg {
+    margin-bottom: 0px;
+  }
+  .regLine {
+    margin-bottom: 5px;
+    background-color: #000;
+    @include size(87.5vw, 2px);
+  }
+  .inputEmail {
+    margin: 20px 0px 15px 0px;
+    @extend .common-input;
+  }
+  .inputPassword {
+    margin-bottom: 15px;
+    @extend .common-input;
+  }
+  .alreadyReg {
+    display: $side;
+    .regAlready {
+      @extend .font;
+    }
+    .regLink {
+      @extend .font;
+      margin-left: 5px;
+    }
+  }
+  .regBtn {
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    @include size(5vw, 2vw);
+    font-size: large;
+    background-color: purple;
+    color: $navbar-BackColor;
+  }
+}

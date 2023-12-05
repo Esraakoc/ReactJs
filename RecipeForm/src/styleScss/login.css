@@ -1,0 +1,53 @@
+.font,
+.loginDiv .loginBtn,
+.loginDiv .notYetRegisterDiv .loginLink,
+.loginDiv .notYetRegisterDiv .loginNotLogin {
+  font-weight: bold;
+  font-size: large;
+}
+
+.common-input,
+.loginDiv .inputPassword,
+.loginDiv .inputEmail {
+  width: 86vw;
+  height: 45px;
+  border: none;
+  border-radius: 15px;
+  background-color: rgba(187, 187, 187, 0.7333333333);
+  padding-left: 25px;
+}
+
+.loginDiv {
+  margin: 9vw 0px 33vw 6vw;
+}
+.loginDiv .login {
+  margin-bottom: 0px;
+}
+.loginDiv .loginLine {
+  margin-bottom: 5px;
+  background-color: #000;
+  width: 87.5vw;
+  height: 2px;
+}
+.loginDiv .inputEmail {
+  margin: 20px 0px 15px 0px;
+}
+.loginDiv .inputPassword {
+  margin-bottom: 15px;
+}
+.loginDiv .notYetRegisterDiv {
+  display: flex;
+}
+.loginDiv .notYetRegisterDiv .loginLink {
+  margin-left: 5px;
+}
+.loginDiv .loginBtn {
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 5vw;
+  height: 2vw;
+  background-color: purple;
+  color: white;
+  cursor: pointer;
+} /*# sourceMappingURL=login.css.map */

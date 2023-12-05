@@ -1,0 +1,42 @@
+.border, .addDiv .addForm textarea, .addDiv .addForm .addName, .addDiv .addForm select {
+  border: none;
+  border-radius: 5px;
+}
+
+.addDiv {
+  padding: 7vw 0px 50px 40vw;
+  background-color: #f5f6ea;
+}
+.addDiv .addForm select {
+  width: 15vw;
+  height: 40px;
+  background-color: rgb(144, 199, 221);
+  cursor: pointer;
+}
+.addDiv .addForm .addName {
+  width: 15vw;
+  height: 40px;
+  background-color: rgb(144, 199, 221);
+}
+.addDiv .addForm textarea {
+  width: 15vw;
+  height: 40px;
+  background-color: rgb(144, 199, 221);
+}
+.addDiv .addForm .DosyaSec {
+  background-color: #f5f6ea;
+  cursor: pointer;
+}
+.addDiv .addForm .addBtn {
+  margin-top: 20px;
+  text-align: center;
+  width: 9vw;
+  height: 4vh;
+  font-weight: bold;
+  font-size: medium;
+  color: white;
+  background-color: #005d8e;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}/*# sourceMappingURL=addRecipes.css.map */

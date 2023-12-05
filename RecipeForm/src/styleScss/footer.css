@@ -1,0 +1,63 @@
+@charset "UTF-8";
+.common-icon, .footerDiv .footer .footerSocialMediaDiv .footerIcons .twitterBtn, .footerDiv .footer .footerSocialMediaDiv .footerIcons .youtubeBtn, .footerDiv .footer .footerSocialMediaDiv .footerIcons .instagramBtn, .footerDiv .footer .footerSocialMediaDiv .footerIcons .facebookBtn {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  margin: 0px 30px 0px 0px;
+}
+
+.footerDiv {
+  box-shadow: 0px 0px 2px 1px #f5d41e;
+  margin-top: 10px;
+}
+.footerDiv .footer {
+  width: 97.5vw;
+  height: 140px;
+  border: none;
+  padding-top: 10px;
+  margin: 0%;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+}
+.footerDiv .footer .footerCompanyDiv {
+  text-align: left;
+  padding: 0px 30vw 0px 300px;
+}
+.footerDiv .footer .footerCompanyDiv .footerLinks a {
+  color: purple; /* Footer içindeki linklerin rengi */
+  text-decoration: none; /* Link altı çizgiyi kaldır */
+  font-size: large;
+}
+.footerDiv .footer .footerCompanyDiv .footerLinks a:hover {
+  text-decoration: underline; /* Fare üzerine geldiğinde linkleri altı çiz */
+}
+.footerDiv .footer .footerSocialMediaDiv {
+  margin-left: 270px;
+}
+.footerDiv .footer .footerSocialMediaDiv .socialMeadia {
+  text-align: right;
+  padding-right: 120px;
+}
+.footerDiv .footer .footerSocialMediaDiv .footerIcons {
+  color: green;
+  text-align: right;
+  padding-right: 50px;
+}
+.footerDiv .footer .footerSocialMediaDiv .footerIcons .facebookBtn {
+  color: #3b5998;
+}
+.footerDiv .footer .footerSocialMediaDiv .footerIcons .instagramBtn {
+  color: #d92a7d;
+}
+.footerDiv .footer .footerSocialMediaDiv .footerIcons .youtubeBtn {
+  color: #ff0000;
+}
+.footerDiv .footer .footerSocialMediaDiv .footerIcons .twitterBtn {
+  color: #00acee;
+}
+.footerDiv .footerCOPYRIGHT {
+  margin: 0% 0px 0px 600px;
+}/*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,60 @@
+@import "variables";
+
+.font {
+  font-weight: bold;
+  font-size: large;
+  font-family: SourceSansPro, Helvetica, sans-serif;
+}
+
+.navbarDiv {
+  display: $side;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  @include size(100%, 5vw);
+  background-color: $navbar-BackColor;
+  padding: 10px 0px 10px 0px;
+  box-shadow: 0px 0px 2px 1px #f5d41e;
+  .navbarLogoBtn {
+    margin: 0px 23vw 0px 15vw;
+    background-color: $navbar-BackColor;
+    border: none;
+    cursor: pointer;
+    .navbarLogo {
+      @include size(200px, 100px);
+    }
+  }
+  .navbarNav {
+    display: $side;
+    padding: 35px 20vw 0px 7px;
+    text-align: right;
+    @extend .font;
+  }
+}
+
+.sub-menu {
+  margin-top: 25px;
+  @extend .font;
+  display: none;
+  position: absolute;
+  width: 180px; /* Kartın genişliğini isteğinize göre ayarlayabilirsiniz */
+  background-color: $navbar-BackColor;
+  box-shadow: 4px 4px 8px rgba(171, 61, 235, 0.822);
+  padding: 10px;
+  z-index: 1;
+  text-align: left;
+  a {
+    display: $block;
+    text-decoration: none;
+    color: #333;
+    padding: 8px 0;
+    &:hover {
+      background-color: #f0f0f0;
+      text-decoration: underline;
+    }
+  }
+}
+.navbarNav:hover .sub-menu {
+  display: $block;
+}

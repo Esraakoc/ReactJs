@@ -1,0 +1,21 @@
+.aboutUsDiv {
+  background-color: #f5f6ea;
+  padding: 7vw 25vw 50px 25vw;
+  text-align: center;
+}
+.aboutUsDiv img {
+  width: 50%;
+  height: 200px;
+}
+.aboutUsDiv h1 {
+  color: #005d8e;
+}
+.aboutUsDiv .aboutUsFlex {
+  display: flex;
+}
+.aboutUsDiv .aboutUsFlex h3 {
+  margin-top: 0px;
+}
+.aboutUsDiv .aboutUsFlex label {
+  margin-top: 2px;
+}/*# sourceMappingURL=aboutUs.css.map */

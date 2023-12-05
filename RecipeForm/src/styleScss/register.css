@@ -1,0 +1,48 @@
+.common-input, .regDiv .inputPassword, .regDiv .inputEmail {
+  padding-left: 25px;
+  width: 86vw;
+  height: 45px;
+  border: none;
+  border-radius: 15px;
+  background-color: rgba(187, 187, 187, 0.7333333333);
+}
+
+.font, .regDiv .alreadyReg .regLink, .regDiv .alreadyReg .regAlready {
+  font-weight: bold;
+  font-size: large;
+}
+
+.regDiv {
+  margin: 9vw 0px 33vw 6vw;
+}
+.regDiv .reg {
+  margin-bottom: 0px;
+}
+.regDiv .regLine {
+  margin-bottom: 5px;
+  background-color: #000;
+  width: 87.5vw;
+  height: 2px;
+}
+.regDiv .inputEmail {
+  margin: 20px 0px 15px 0px;
+}
+.regDiv .inputPassword {
+  margin-bottom: 15px;
+}
+.regDiv .alreadyReg {
+  display: flex;
+}
+.regDiv .alreadyReg .regLink {
+  margin-left: 5px;
+}
+.regDiv .regBtn {
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 5vw;
+  height: 2vw;
+  font-size: large;
+  background-color: purple;
+  color: white;
+}/*# sourceMappingURL=register.css.map */

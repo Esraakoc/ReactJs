@@ -1,0 +1,27 @@
+@import "variables";
+
+.homeDiv {
+  background-color: $main-backColor;
+  margin: 200px 0px 90px 0px;
+  padding: 5px 10px 10px 25px;
+  .homeMap {
+    display: $side;
+    flex-wrap: wrap;
+    gap: 10px;
+    @include size(100%, 25vw);
+    overflow-y: auto;
+    .homeLBtn {
+      border: none;
+      background-color: $main-backColor;
+      text-decoration: none;
+      cursor: $hand;
+      &:hover {
+        text-decoration: underline;
+      }
+      .homeLName {
+        color: $main-text-color;
+        font-size: 20px;
+      }
+    }
+  }
+}

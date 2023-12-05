@@ -1,0 +1,65 @@
+@import "variables";
+.common-icon {
+  border: none;
+  background-color: $navbar-BackColor;
+  cursor: $hand;
+  margin: 0px 30px 0px 0px;
+}
+.footerDiv {
+  box-shadow: 0px 0px 2px 1px #f5d41e;
+  margin-top: 10px;
+  .footer {
+    @include size(97.5vw, 140px);
+    border: none;
+    padding-top: 10px;
+    margin: 0%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: $side;
+    .footerCompanyDiv {
+      text-align: left;
+      padding: 0px 30vw 0px 300px;
+      .footerLinks a {
+        color: purple; /* Footer içindeki linklerin rengi */
+        text-decoration: none; /* Link altı çizgiyi kaldır */
+        font-size: large;
+        &:hover {
+          text-decoration: underline; /* Fare üzerine geldiğinde linkleri altı çiz */
+        }
+      }
+    }
+    .footerSocialMediaDiv {
+      margin-left: 270px;
+      .socialMeadia {
+        text-align: right;
+        padding-right: 120px;
+      }
+      .footerIcons {
+        color: green;
+        text-align: right;
+        padding-right: 50px;
+        .facebookBtn {
+          color: #3b5998;
+          @extend .common-icon;
+        }
+        .instagramBtn {
+          color: #d92a7d;
+          @extend .common-icon;
+        }
+        .youtubeBtn {
+          color: #ff0000;
+          @extend .common-icon;
+        }
+        .twitterBtn {
+          color: #00acee;
+          @extend .common-icon;
+        }
+      }
+    }
+  }
+  .footerCOPYRIGHT {
+    margin: 0% 0px 0px 600px;
+  }
+}

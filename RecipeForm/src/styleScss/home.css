@@ -1,0 +1,26 @@
+.homeDiv {
+  background-color: #f5f6ea;
+  margin: 200px 0px 90px 0px;
+  padding: 5px 10px 10px 25px;
+}
+.homeDiv .homeMap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+  height: 25vw;
+  overflow-y: auto;
+}
+.homeDiv .homeMap .homeLBtn {
+  border: none;
+  background-color: #f5f6ea;
+  text-decoration: none;
+  cursor: pointer;
+}
+.homeDiv .homeMap .homeLBtn:hover {
+  text-decoration: underline;
+}
+.homeDiv .homeMap .homeLBtn .homeLName {
+  color: #005d8e;
+  font-size: 20px;
+}/*# sourceMappingURL=home.css.map */

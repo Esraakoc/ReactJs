@@ -1,0 +1,30 @@
+@import "variables";
+
+.MealsDiv {
+  background-color: $main-backColor;
+  .mealsMapDiv {
+    padding: 7vw 50px 0px 50px;
+    text-align: center;
+    display: $side;
+    flex-wrap: wrap; /* Bu satırı ekleyin, fotoğrafların yan yana sığmasını sağlar */
+    justify-content: space-between; /* Bu satırı ekleyin, fotoğrafları eşit aralıklarla sıralar */
+    .mealsMap {
+      width: 30%; /* Fotoğrafın genişliğini ayarlayın, böylece her satırda 3 fotoğraf olur */
+      margin-bottom: 20px; /* İstediğiniz boşluğu ekleyin */
+      button {
+        background-color: $main-backColor;
+        cursor: $hand;
+        border: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      h1 {
+        color: $main-text-color;
+      }
+      img {
+        @include size(100%, auto);
+      }
+    }
+  }
+}
