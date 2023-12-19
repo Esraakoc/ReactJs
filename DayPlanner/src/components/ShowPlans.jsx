@@ -51,11 +51,30 @@ function ShowPlans() {
               key={item}
               className="showPmap"
             >
-              <h2>{event.date}</h2>
-              <h2>{event.hour}</h2>
-              <h2>{event.name}</h2>
-              <h3>{event.note}</h3>
-              <h3>{event.location}</h3>
+              <div className="titleAndAnsw">
+                <h4>Date: </h4>
+                <h5>{event.date}</h5>
+              </div>
+              <div className="titleAndAnsw">
+                <h4>Hour: </h4>
+                <h5>{event.hour}</h5>
+              </div>
+              <div className="titleAndAnsw">
+                <h4>Event Name: </h4>
+                <h5>{event.name}</h5>
+              </div>
+              <div className="titleAndAnsw">
+                <h4>Event Note: </h4>
+                <h5>{event.note}</h5>
+              </div>
+              <div className="titleAndAnsw">
+                <h4>Location: </h4>
+                <h5>{event.location}</h5>
+              </div>
+              <div className="buttons">
+                <button className="buttonDelete">Delete</button>
+                <button className="buttonUpdate">Update</button>
+              </div>
             </div>
           );
         })}

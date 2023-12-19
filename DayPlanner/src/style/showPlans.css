@@ -4,7 +4,7 @@
   height: 2vw;
 }
 
-.borderShow, .showPdiv .showPsearch button, .showPdiv .showPsearch form input {
+.borderShow, .showPdiv .showPmap .buttons .buttonUpdate, .showPdiv .showPmap .buttons .buttonDelete, .showPdiv .showPsearch button {
   border: none;
   border-radius: 5px;
 }
@@ -14,6 +14,7 @@
 }
 .showPdiv .showPsearch {
   margin-left: 40vw;
+  margin-bottom: 30px;
   display: flex;
 }
 .showPdiv .showPsearch form h2 {
@@ -21,8 +22,12 @@
   color: brown;
 }
 .showPdiv .showPsearch form input {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px #606c38;
   width: 15vw;
   height: 40px;
+  background-color: #fefae0;
 }
 .showPdiv .showPsearch button {
   background-color: brown;
@@ -38,15 +43,38 @@
 }
 .showPdiv .showPmap {
   flex: 0 0 calc(25% - 20px); /* Kutucuk genişliği için gereken stil ayarları */
+  box-shadow: 0px 0px 10px #606c38;
   padding: 10px;
   margin: 10px;
   background-color: #fefae0;
   border-radius: 5px;
   text-align: center;
 }
-.showPdiv .showPmap h2 {
-  font-size: large;
+.showPdiv .showPmap .titleAndAnsw {
+  display: flex;
+  text-align: center;
+  padding-left: 50px;
 }
-.showPdiv .showPmap h3 {
-  font-size: large;
+.showPdiv .showPmap .titleAndAnsw h4 {
+  color: rgba(0, 0, 0, 0.74);
+  font-weight: 500;
+}
+.showPdiv .showPmap .titleAndAnsw h5 {
+  color: black;
+  font-weight: 400;
+  padding-top: 4px;
+  padding-left: 25px;
+}
+.showPdiv .showPmap .buttons {
+  margin-left: 12vw;
+}
+.showPdiv .showPmap .buttons .buttonDelete {
+  margin-right: 20px;
+  background-color: brown;
+  color: #fefae0;
+}
+.showPdiv .showPmap .buttons .buttonUpdate {
+  margin-right: 20px;
+  background-color: #606c38;
+  color: #fefae0;
 }/*# sourceMappingURL=showPlans.css.map */
