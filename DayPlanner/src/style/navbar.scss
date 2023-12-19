@@ -1,0 +1,42 @@
+@import "variables";
+
+.navbarDiv {
+  display: flex;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  background-color: $greenColor;
+  height: 80px;
+  margin-bottom: 30px;
+  box-shadow: 0px 5px 10px white;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+  button {
+    margin: 0px 20px 20px 15vw;
+    border: none;
+    background-color: $greenColor;
+    width: 50px;
+    outline: none;
+  }
+  .navbarPhoto {
+    height: 4vw;
+    width: 4vw;
+  }
+  .title {
+    margin-left: 20px;
+    padding-top: 20px;
+    color: $creamColor;
+  }
+  nav {
+    padding: 30px 20vw 0px 30vw;
+    text-align: right;
+    .navbarLink {
+      color: $creamColor;
+      font-size: 20px;
+      font-weight: bolder;
+      text-decoration: underline;
+    }
+  }
+}

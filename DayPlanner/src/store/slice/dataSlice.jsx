@@ -3,6 +3,7 @@ import {createSlice} from "@reduxjs/toolkit";
 const initialState = {
   events: [],
   foundData: "",
+  searchs: "",
 };
 const dataSlice = createSlice({
   name: "user",
@@ -17,7 +18,11 @@ const dataSlice = createSlice({
     sendEvent: (state, actions) => {
       state.events.push(actions.payload);
     },
+    changeSearchs: (state, actions) => {
+      state.searchs = actions.payload;
+    },
   },
 });
-export const {gettedEvent, setFoundData, sendEvent} = dataSlice.actions;
+export const {gettedEvent, setFoundData, sendEvent, changeSearchs} =
+  dataSlice.actions;
 export default dataSlice.reducer;

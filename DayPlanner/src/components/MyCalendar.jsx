@@ -35,8 +35,8 @@ const MyCalendar = () => {
   };
 
   return (
-    <div>
-      <h2 style={{marginLeft: "60px", marginBottom: "2vw"}}>Agenda</h2>
+    <div className="myCalendarDiv">
+      <h2 style={{marginBottom: "1vw", color: "#582f0e"}}>Agenda</h2>
       <div style={{display: "flex"}}>
         {show ? <ShowEventForm /> : <div></div>}
         <Calendar

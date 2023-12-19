@@ -1,0 +1,45 @@
+.button-size {
+  width: 8vw;
+  height: 2vw;
+}
+
+.navbarDiv {
+  display: flex;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  background-color: #606c38;
+  height: 80px;
+  margin-bottom: 30px;
+  box-shadow: 0px 5px 10px white;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+.navbarDiv button {
+  margin: 0px 20px 20px 15vw;
+  border: none;
+  background-color: #606c38;
+  width: 50px;
+  outline: none;
+}
+.navbarDiv .navbarPhoto {
+  height: 4vw;
+  width: 4vw;
+}
+.navbarDiv .title {
+  margin-left: 20px;
+  padding-top: 20px;
+  color: #fefae0;
+}
+.navbarDiv nav {
+  padding: 30px 20vw 0px 30vw;
+  text-align: right;
+}
+.navbarDiv nav .navbarLink {
+  color: #fefae0;
+  font-size: 20px;
+  font-weight: bolder;
+  text-decoration: underline;
+}/*# sourceMappingURL=navbar.css.map */

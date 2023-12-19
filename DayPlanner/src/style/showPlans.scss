@@ -1,0 +1,48 @@
+.showPdiv {
+  margin: 2vw;
+  .showPsearch {
+    margin: 0px 0px 0px 40vw;
+    display: flex;
+    form {
+      h2 {
+        margin-left: 1vw;
+        color: brown;
+      }
+      input {
+        border: none;
+        border-radius: 5px;
+        width: 15vw;
+        height: 40px;
+      }
+    }
+    button {
+      background-color: brown;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      width: 5vw;
+      height: 40px;
+      margin-top: 47px;
+      margin-left: 40px;
+    }
+  }
+  .showPmapDiv {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .showPmap {
+    flex: 0 0 calc(25% - 20px); /* Kutucuk genişliği için gereken stil ayarları */
+    padding: 10px;
+    margin: 10px;
+    background-color: #fefae0;
+    border-radius: 5px;
+    text-align: center;
+    h2 {
+      font-size: large;
+    }
+    h3 {
+      font-size: large;
+    }
+  }
+}
