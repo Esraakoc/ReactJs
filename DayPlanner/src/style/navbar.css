@@ -3,6 +3,11 @@
   height: 2vw;
 }
 
+.borderShow {
+  border: none;
+  border-radius: 5px;
+}
+
 .navbarDiv {
   display: flex;
   position: relative;

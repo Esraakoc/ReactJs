@@ -1,7 +1,8 @@
+@import "variables";
 .showPdiv {
   margin: 2vw;
   .showPsearch {
-    margin: 0px 0px 0px 40vw;
+    margin-left: 40vw;
     display: flex;
     form {
       h2 {
@@ -9,22 +10,17 @@
         color: brown;
       }
       input {
-        border: none;
-        border-radius: 5px;
-        width: 15vw;
-        height: 40px;
+        @extend .borderShow;
+        @include size(15vw, 40px);
       }
     }
     button {
       background-color: brown;
       color: white;
-      font-weight: bold;
-      border: none;
-      border-radius: 5px;
-      width: 5vw;
-      height: 40px;
-      margin-top: 47px;
-      margin-left: 40px;
+      font-weight: $font-weight;
+      @extend .borderShow;
+      @include size(5vw, 40px);
+      margin: 47px 0px 0px 40px;
     }
   }
   .showPmapDiv {
@@ -35,7 +31,7 @@
     flex: 0 0 calc(25% - 20px); /* Kutucuk genişliği için gereken stil ayarları */
     padding: 10px;
     margin: 10px;
-    background-color: #fefae0;
+    background-color: $creamColor;
     border-radius: 5px;
     text-align: center;
     h2 {
