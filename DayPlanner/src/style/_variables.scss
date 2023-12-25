@@ -3,10 +3,10 @@ $creamColor: #fefae0;
 $greenColor: #606c38;
 $mainColor: #bc6c25;
 $gap: 5vw;
-$padding: 20px 20px 20px 20px;
+$padding: 20px;
 $border-radius: 15px;
 
-.button-size { 
+.button-size {
   width: 8vw;
   height: 2vw;
 }
@@ -14,7 +14,7 @@ $border-radius: 15px;
   width: $width;
   height: $height;
 }
-.borderShow{
+.borderShow {
   border: none;
   border-radius: 5px;
 }

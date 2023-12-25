@@ -7,20 +7,10 @@
   overflow-y: auto;
   max-height: 465px;
   width: 300px;
-  h3 {
-    color: $creamColor;
-  }
   div {
     margin-top: 20px;
     h5 {
       font-weight: $font-weight;
-      color: $creamColor;
-    }
-    p {
-      margin-top: 2px;
-      margin-left: 7px;
-      font-weight: $font-weight;
-      color: #161a1d;
     }
   }
 }

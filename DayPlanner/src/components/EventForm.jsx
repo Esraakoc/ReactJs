@@ -4,16 +4,19 @@ import FmdGoodIcon from "@mui/icons-material/FmdGood";
 import QueryBuilderIcon from "@mui/icons-material/QueryBuilder";
 import EditNoteIcon from "@mui/icons-material/EditNote";
 import DriveFileRenameOutlineIcon from "@mui/icons-material/DriveFileRenameOutline";
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {sendEventActions} from "../Api";
 
-function EventForm({date}) {
+function EventForm({date, eventId, updateOpen, onUpdate}) {
+  const {events} = useSelector((state) => {
+    return state.user;
+  });
   const dispatch = useDispatch();
-  //useState
-  const [hour, setHour] = useState("");
-  const [name, setName] = useState("");
-  const [note, setNote] = useState("");
-  const [location, seLocation] = useState("");
+  const [hour, setHour] = useState(eventId ? events.hour : "");
+  debugger;
+  const [name, setName] = useState(eventId ? events.name : "");
+  const [note, setNote] = useState(eventId ? events.note : "");
+  const [location, setLocation] = useState(eventId ? events.location : "");
   //onChange Arrow Functionları
   const handleSelectChange = (e) => {
     setHour(e.target.value);
@@ -25,8 +28,9 @@ function EventForm({date}) {
     setNote(e.target.value);
   };
   const handleChangeLocation = (e) => {
-    seLocation(e.target.value);
+    setLocation(e.target.value);
   };
+
   //button'a basıldığında çalışacak olan Arrow function
   const handleFormSubmit = (e) => {
     e.preventDefault();
@@ -35,7 +39,7 @@ function EventForm({date}) {
     setName("");
     setHour("");
     setNote("");
-    seLocation("");
+    setLocation("");
   };
   //30 dakika aralıklarla olan saat optionları
   const generateOptions = () => {
@@ -57,47 +61,131 @@ function EventForm({date}) {
     }
     return options;
   };
-
+  let foundEvent = events.filter((event) => event.id == eventId);
+  const eventToUpdate = foundEvent.length > 0 ? foundEvent[0] : null;
   return (
     <div className="eventFormDiv">
-      <form onSubmit={handleFormSubmit}>
-        <div>
-          <h5>
-            <DriveFileRenameOutlineIcon /> Event Name
-          </h5>
-          <input
-            value={name}
-            onChange={handleChangeName}
-          />
-          <h5>
-            <QueryBuilderIcon /> Hour
-          </h5>
-          <select
-            value={hour}
-            onChange={handleSelectChange}
-          >
-            {generateOptions()}
-          </select>
-          <h5>
-            <EditNoteIcon /> Note
-          </h5>
-          <textarea
-            value={note}
-            onChange={handleChangeNote}
-          />
-          <h5>
-            <FmdGoodIcon />
-            Location
-          </h5>
-          <input
-            value={location}
-            onChange={handleChangeLocation}
-          />
+      {updateOpen ? (
+        <>
+          {foundEvent.map((event, item) => {
+            return (
+              <div
+                key={item}
+                className="showPupdateDiv"
+              >
+                <div className="titleAndAnsw">
+                  <h4>Date: </h4>
+                  <h5>{event.date}</h5>
+                </div>
+                <div className="titleAndAnsw">
+                  <h4>Hour: </h4>
+                  <input
+                    className="hourInput"
+                    value={hour}
+                    onChange={(e) => setHour(e.target.value)}
+                    placeholder={event.hour}
+                  />
+                </div>
+                <div className="titleAndAnsw">
+                  <h4>Event Name: </h4>
+                  <input
+                    className="nameInput"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    placeholder={event.name}
+                  />
+                </div>
+                <div className="titleAndAnsw">
+                  <h4>Event Note: </h4>
+                  <input
+                    className="noteInput"
+                    value={note}
+                    onChange={(e) => setNote(e.target.value)}
+                    placeholder={event.note}
+                  />
+                </div>
+                <div className="titleAndAnsw">
+                  <h4>Location: </h4>
+                  <input
+                    className="locaInput"
+                    value={location}
+                    onChange={(e) => setLocation(e.target.value)}
+                    placeholder={event.location}
+                  />
+                </div>
+                <div className="buttons">
+                  <button
+                    className="buttonUpdate"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      if (updateOpen) {
+                        onUpdate(
+                          eventId,
+                          event.date,
+                          hour,
+                          name,
+                          note,
+                          location
+                        );
+                      } else {
+                        onUpdate(
+                          eventId,
+                          event.date,
+                          event.hour,
+                          event.name,
+                          event.note,
+                          event.location
+                        );
+                      }
+                    }}
+                  >
+                    Complete the Update
+                  </button>
+                </div>
+              </div>
+            );
+          })}
+        </>
+      ) : (
+        <form onSubmit={handleFormSubmit}>
           <div>
-            <button>Add to Calendar</button>
+            <h5>
+              <DriveFileRenameOutlineIcon /> Event Name
+            </h5>
+            <input
+              value={name}
+              onChange={handleChangeName}
+            />
+            <h5>
+              <QueryBuilderIcon /> Hour
+            </h5>
+            <select
+              value={hour}
+              onChange={handleSelectChange}
+            >
+              {generateOptions()}
+            </select>
+            <h5>
+              <EditNoteIcon /> Note
+            </h5>
+            <textarea
+              value={note}
+              onChange={handleChangeNote}
+            />
+            <h5>
+              <FmdGoodIcon />
+              Location
+            </h5>
+            <input
+              value={location}
+              onChange={handleChangeLocation}
+            />
+            <div>
+              <button>Add to Calendar</button>
+            </div>
           </div>
-        </div>
-      </form>
+        </form>
+      )}
     </div>
   );
 }

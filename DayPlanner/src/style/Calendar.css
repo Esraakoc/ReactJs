@@ -16,6 +16,7 @@
 }
 
 .react-calendar {
+  margin-right: 5vw;
   padding: 30px 10px 30px 10px;
   border: none;
   border-radius: 15px;
