@@ -1,6 +1,5 @@
 // npm install babel-loader @babel/preset-react --save-dev
 // npm i react-notifications
-
 import React from "react";
 import {NotificationContainer, NotificationManager} from "react-notifications";
 import "react-notifications/lib/notifications.css";
@@ -14,7 +13,6 @@ class Notification extends React.Component {
     );
   }
 }
-
 export const showNotification = (type, message, title, time, callback) => {
   switch (type) {
     case "info":

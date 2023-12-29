@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import "../style/eventForm.css";
 import FmdGoodIcon from "@mui/icons-material/FmdGood";
 import QueryBuilderIcon from "@mui/icons-material/QueryBuilder";
@@ -11,9 +11,11 @@ function EventForm({date, eventId, updateOpen, onUpdate}) {
   const {events} = useSelector((state) => {
     return state.user;
   });
+  // useEffect(() => {
+  //   dispatch(gettedEventActions());
+  // }, [eventId]);
   const dispatch = useDispatch();
   const [hour, setHour] = useState(eventId ? events.hour : "");
-  debugger;
   const [name, setName] = useState(eventId ? events.name : "");
   const [note, setNote] = useState(eventId ? events.note : "");
   const [location, setLocation] = useState(eventId ? events.location : "");
@@ -62,7 +64,8 @@ function EventForm({date, eventId, updateOpen, onUpdate}) {
     return options;
   };
   let foundEvent = events.filter((event) => event.id == eventId);
-  const eventToUpdate = foundEvent.length > 0 ? foundEvent[0] : null;
+  // const eventToUpdate = foundEvent.length > 0 ? foundEvent[0] : null;
+  // console.log(foundEvent.name, 555);
   return (
     <div className="eventFormDiv">
       {updateOpen ? (

@@ -11,23 +11,20 @@ function AddRecipe() {
   const [ingredients, setIngredients] = useState("");
   const [preparation, setPreparation] = useState("");
   const [img, setImg] = useState("");
-
+  //onChange to handleChange arrowFunciton
   const handleChangeCategory = (e) => {
     setCategory(e.target.value);
   };
-
   const handleChangeFoodName = (e) => {
     setFoodName(e.target.value);
   };
-
   const handleChangeIngredients = (e) => {
     setIngredients(e.target.value);
   };
-
   const handleChangePreparation = (e) => {
     setPreparation(e.target.value);
   };
-
+  //onSubmiy to handleAdded arrowFunciton
   const handleAdded = (e) => {
     e.preventDefault();
     const newData = {category, foodName, ingredients, preparation, img};
@@ -42,12 +39,10 @@ function AddRecipe() {
   function handleFileUpload(event) {
     const file = event.target.files[0];
     const reader = new FileReader();
-
     reader.onload = (e) => {
       const imageSrc = e.target.result;
       setImg(imageSrc);
     };
-
     reader.readAsDataURL(file);
   }
 

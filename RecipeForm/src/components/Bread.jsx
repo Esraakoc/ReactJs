@@ -7,16 +7,13 @@ import {useNavigate} from "react-router-dom";
 function ColdDishes() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-
   const {recipes} = useSelector((state) => {
     return state.recipe;
   });
-
   const handleClickRecipe = (id) => {
     dispatch(sendItemActions(id));
     navigate("/recipe");
   };
-
   const Category = recipes.filter((item) => item.category === "Bread");
   return (
     <div className="MealsDiv">

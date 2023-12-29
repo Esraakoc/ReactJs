@@ -11,7 +11,6 @@ function Footer() {
   const redirectToFacebook = () => {
     window.open("https://tr-tr.facebook.com/", "_blank");
   };
-
   const redirectToInstagram = () => {
     window.open("https://www.instagram.com/", "_blank");
   };

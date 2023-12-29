@@ -7,7 +7,6 @@ import {sendItemActions} from "../../Api";
 function HomeList(recipes) {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-
   const handleClickRecipe = (id) => {
     dispatch(sendItemActions(id));
     navigate("/recipe");

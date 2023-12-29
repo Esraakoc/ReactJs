@@ -19,11 +19,9 @@ function Navbar() {
   const navigate = useNavigate();
 
   const [showCategories, setShowCategories] = useState(false);
-
   const toggleCategories = () => {
     setShowCategories(!showCategories);
   };
-
   const handleChangeLanguage = (newLanguage) => {
     localStorage.setItem("language", newLanguage);
     window.location.reload();

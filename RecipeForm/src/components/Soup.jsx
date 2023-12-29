@@ -7,11 +7,9 @@ import {useNavigate} from "react-router-dom";
 function Soup() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-
   const {recipes} = useSelector((state) => {
     return state.recipe;
   });
-
   const handleClickRecipe = (id) => {
     dispatch(sendItemActions(id));
     navigate("/recipe");

@@ -5,7 +5,6 @@ import {useTranslation} from "react-i18next";
 
 function AboutUs() {
   const {t} = useTranslation();
-
   return (
     <div className="aboutUsDiv">
       <img src={aboutUsImage} />
