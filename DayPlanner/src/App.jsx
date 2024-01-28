@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import {Routes, Route} from "react-router-dom";
 import ShowPlans from "./components/ShowPlans";
 import Footer from "./components/Footer";
+import Login from "./components/Login";
 
 function App() {
   const dispatch = useDispatch();
@@ -15,7 +16,6 @@ function App() {
   }, []);
   return (
     <div className="appDiv">
-      {" "}
       <Navbar />
       <Routes>
         <Route
@@ -25,6 +25,10 @@ function App() {
         <Route
           path="/show_plans"
           element={<ShowPlans />}
+        />
+        <Route
+          path="/login"
+          element={<Login />}
         />
       </Routes>
       <Footer />

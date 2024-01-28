@@ -24,7 +24,7 @@
       "description": "(The price is valid for Trend pizzas. There is a price difference when the category is changed.)",
       "img": "./src/images/campaigns/buyuk-pizza-1-lt-icecek-2-cartedor.jpg",
       "price": 370,
-      "quantity": 1,
+      "quantity": 2,
       "category": "campaigns Pizzas"
     },
     {
@@ -413,7 +413,7 @@
       "description": "(The price is valid for Trend pizzas. There is a price difference when the category is changed.)",
       "img": "./src/images/campaigns/buyuk-pizza-1-lt-icecek-2-cartedor.jpg",
       "price": 370,
-      "quantity": 1,
+      "quantity": 2,
       "category": "campaigns Pizzas"
     }
   ]

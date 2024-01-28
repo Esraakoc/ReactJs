@@ -1,7 +1,7 @@
 @import "variables";
 
 .recipeFDiv {
-  padding: 170px 0px 30px 250px;
+  padding: 180px 0px 30px 250px;
   display: flex;
   background-color: $main-backColor;
   .recipeFNameImg {
@@ -12,7 +12,7 @@
     }
   }
   .RecipeFingPre {
-    margin: 50px 170px 10px 70px;
+    margin: 20px;
     h5 {
       margin: 30px 170px 50px 100px;
       font: {

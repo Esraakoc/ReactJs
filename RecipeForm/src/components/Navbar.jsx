@@ -3,25 +3,13 @@ import "../styleScss/navbar.css";
 import {Link, useNavigate} from "react-router-dom";
 import Logo from "../images/Logo.png";
 import {BsPersonCircle} from "react-icons/bs";
-import MenuIcon from "@mui/icons-material/Menu";
 import {useTranslation} from "react-i18next";
+import Dropdown from "react-bootstrap/Dropdown";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-function SubMenu() {
-  return (
-    <div className="sub-menu">
-      <Link to="/dessert">Dessert</Link>
-      <Link to="/soup">Soup</Link>
-      <Link to="/bread">Bread</Link>
-    </div>
-  );
-}
 function Navbar() {
   const navigate = useNavigate();
 
-  const [showCategories, setShowCategories] = useState(false);
-  const toggleCategories = () => {
-    setShowCategories(!showCategories);
-  };
   const handleChangeLanguage = (newLanguage) => {
     localStorage.setItem("language", newLanguage);
     window.location.reload();
@@ -41,6 +29,7 @@ function Navbar() {
       <nav className="navbarNav">
         <Link
           style={{
+            marginTop: "6px",
             marginRight: "40px",
             color: "#005D8E",
             textDecoration: "none",
@@ -49,30 +38,29 @@ function Navbar() {
         >
           {t("Add_Recipe_Navbar")}
         </Link>
-        <Link
-          onMouseEnter={toggleCategories}
-          onMouseLeave={toggleCategories}
-          style={{color: "#005D8E", textDecoration: "none", display: "flex"}}
-        >
-          <span>{t("Meals_Navbar")}</span>
-          <span style={{paddingLeft: "2px"}}>
-            <MenuIcon />
-          </span>
-          {showCategories && <SubMenu />}
-        </Link>
+        <Dropdown className="dropdownDiv">
+          <Dropdown.Toggle
+            variant="primary"
+            id="dropdown-basic"
+          >
+            Meals
+          </Dropdown.Toggle>
+          <Dropdown.Menu>
+            <Dropdown.Item href="/dessert">Dessert</Dropdown.Item>
+            <Dropdown.Item href="/soup">Soup</Dropdown.Item>
+            <Dropdown.Item href="/bread">Bread</Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
         <Link
           style={{
+            marginTop: "6px",
             marginLeft: "50px",
             color: "#005D8E",
             textDecoration: "none",
           }}
           to="/login"
         >
-          <span
-            style={{
-              marginRight: "5px",
-            }}
-          >
+          <span style={{marginRight: "5px"}}>
             <BsPersonCircle />
           </span>
           {t("Log_In")}

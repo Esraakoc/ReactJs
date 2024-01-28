@@ -1,17 +1,16 @@
-@charset "UTF-8";
 .MealsDiv {
   background-color: #f5f6ea;
 }
 .MealsDiv .mealsMapDiv {
-  padding: 7vw 50px 0px 50px;
+  padding: 10vw 50px 0px 50px;
   text-align: center;
   display: flex;
-  flex-wrap: wrap; /* Bu satırı ekleyin, fotoğrafların yan yana sığmasını sağlar */
-  justify-content: space-between; /* Bu satırı ekleyin, fotoğrafları eşit aralıklarla sıralar */
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .MealsDiv .mealsMapDiv .mealsMap {
-  width: 30%; /* Fotoğrafın genişliğini ayarlayın, böylece her satırda 3 fotoğraf olur */
-  margin-bottom: 20px; /* İstediğiniz boşluğu ekleyin */
+  width: 30%;
+  margin-bottom: 20px;
 }
 .MealsDiv .mealsMapDiv .mealsMap button {
   background-color: #f5f6ea;
@@ -21,10 +20,11 @@
 .MealsDiv .mealsMapDiv .mealsMap button:hover {
   text-decoration: underline;
 }
-.MealsDiv .mealsMapDiv .mealsMap h1 {
+.MealsDiv .mealsMapDiv .mealsMap h2 {
   color: #005d8e;
 }
 .MealsDiv .mealsMapDiv .mealsMap img {
-  width: 100%;
+  width: 90%;
   height: auto;
+  border-radius: 5px;
 }/*# sourceMappingURL=meals.css.map */

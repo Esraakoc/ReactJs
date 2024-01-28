@@ -1,7 +1,4 @@
-@charset "UTF-8";
-.font,
-.sub-menu,
-.navbarDiv .navbarNav {
+.font, .navbarDiv .navbarNav {
   font-weight: bold;
   font-size: large;
   font-family: SourceSansPro, Helvetica, sans-serif;
@@ -14,7 +11,7 @@
   left: 0;
   z-index: 2;
   width: 100%;
-  height: 5vw;
+  height: 8vw;
   background-color: white;
   padding: 10px 0px 10px 0px;
   box-shadow: 0px 0px 2px 1px #f5d41e;
@@ -31,54 +28,28 @@
 }
 .navbarDiv .navbarNav {
   display: flex;
-  padding: 35px 20vw 0px 7px;
+  padding: 35px 10vw 0px 7px;
   text-align: right;
 }
-
-.sub-menu {
+.navbarDiv .enBtn {
+  width: 80px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0fa6f7;
+  color: white;
   margin-top: 25px;
-  display: none;
-  position: absolute;
-  width: 180px; /* Kartın genişliğini isteğinize göre ayarlayabilirsiniz */
-  background-color: white;
-  box-shadow: 4px 4px 8px rgba(171, 61, 235, 0.822);
-  padding: 10px;
-  z-index: 1;
-  text-align: left;
 }
-.sub-menu a {
-  display: block;
-  text-decoration: none;
-  color: #333;
-  padding: 8px 0;
-}
-.sub-menu a:hover {
-  background-color: #f0f0f0;
-  text-decoration: underline;
+.navbarDiv .trBtn {
+  width: 80px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0fa6f7;
+  color: white;
+  margin-top: 25px;
 }
 
 .navbarNav:hover .sub-menu {
   display: block;
-} /*# sourceMappingURL=navbar.css.map */
-
-.navbarDiv .enBtn {
-  margin-right: 20px;
-  margin-top: 30px;
-  border: none;
-  border-radius: 5px;
-  width: 4vw;
-  height: 2vw;
-  background-color: purple;
-  color: white;
-  cursor: pointer;
-}
-.navbarDiv .trBtn {
-  margin-top: 30px;
-  border: none;
-  border-radius: 5px;
-  width: 4vw;
-  height: 2vw;
-  background-color: purple;
-  color: white;
-  cursor: pointer;
-}
+}/*# sourceMappingURL=navbar.css.map */

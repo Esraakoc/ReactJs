@@ -15,6 +15,7 @@ function Desserts() {
     navigate("/recipe");
   };
   const Category = recipes.filter((item) => item.category === "Dessert");
+
   return (
     <div className="MealsDiv">
       <div className="mealsMapDiv">
@@ -24,7 +25,7 @@ function Desserts() {
             className="mealsMap"
           >
             <button onClick={() => handleClickRecipe(item.id)}>
-              <h1>{item.foodName}</h1>
+              <h2>{item.foodName}</h2>
               <img
                 src={item.img}
                 alt={item.foodName}

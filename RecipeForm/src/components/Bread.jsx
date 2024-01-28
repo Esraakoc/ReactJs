@@ -24,7 +24,7 @@ function ColdDishes() {
             className="mealsMap"
           >
             <button onClick={() => handleClickRecipe(item.id)}>
-              <h1>{item.foodName}</h1>
+              <h2>{item.foodName}</h2>
               <img
                 src={item.img}
                 alt={item.foodName}

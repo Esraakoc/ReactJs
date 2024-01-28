@@ -23,6 +23,12 @@ function Navbar() {
         >
           Show Plans
         </Link>
+        <Link
+          className="navbarLink"
+          to="/login"
+        >
+          Login
+        </Link>
       </nav>
     </div>
   );

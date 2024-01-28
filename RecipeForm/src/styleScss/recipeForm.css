@@ -1,5 +1,5 @@
 .recipeFDiv {
-  padding: 170px 0px 30px 250px;
+  padding: 180px 0px 30px 250px;
   display: flex;
   background-color: #f5f6ea;
 }
@@ -9,7 +9,7 @@
   font-size: 2vw;
 }
 .recipeFDiv .RecipeFingPre {
-  margin: 50px 170px 10px 70px;
+  margin: 20px;
 }
 .recipeFDiv .RecipeFingPre h5 {
   margin: 30px 170px 50px 100px;

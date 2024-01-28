@@ -1,14 +1,9 @@
-.font,
-.loginDiv .loginBtn,
-.loginDiv .notYetRegisterDiv .loginLink,
-.loginDiv .notYetRegisterDiv .loginNotLogin {
+.font, .loginDiv .loginBtn, .loginDiv .notYetRegisterDiv .loginLink, .loginDiv .notYetRegisterDiv .loginNotLogin {
   font-weight: bold;
   font-size: large;
 }
 
-.common-input,
-.loginDiv .inputPassword,
-.loginDiv .inputEmail {
+.common-input, .loginDiv .inputPassword, .loginDiv .inputEmail {
   width: 86vw;
   height: 45px;
   border: none;
@@ -50,4 +45,4 @@
   background-color: purple;
   color: white;
   cursor: pointer;
-} /*# sourceMappingURL=login.css.map */
+}/*# sourceMappingURL=login.css.map */
