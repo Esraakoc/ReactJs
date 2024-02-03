@@ -90,7 +90,7 @@ function EventForm({date, eventId, updateOpen, onUpdate}) {
                   />
                 </div>
                 <div className="titleAndAnsw">
-                  <h4>Event Name: </h4>
+                  <h4>Event Name: </h4> 
                   <input
                     className="nameInput"
                     value={name}

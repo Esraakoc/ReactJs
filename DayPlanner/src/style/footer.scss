@@ -6,8 +6,6 @@
   left: 0;
   z-index: 2;
   @include size(100%, 6vw);
-  background-color: $greenColor;
   margin-top: 15vw;
-  border: none;
-  box-shadow: 0px 0px 20px white; /* Gölge efekti */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }

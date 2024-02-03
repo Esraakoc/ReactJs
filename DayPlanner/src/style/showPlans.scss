@@ -13,9 +13,9 @@
       input {
         border: none;
         border-radius: 10px;
-        box-shadow: 0px 0px 20px $greenColor;
+        box-shadow: 0px 0px 10px black;
         @include size(15vw, 40px);
-        background-color: $creamColor;
+        background-color: #e3f2fd;
       }
     }
     button {
@@ -32,11 +32,11 @@
     flex-wrap: wrap;
   }
   .showPmap {
-    flex: 0 0 calc(25% - 20px); /* Kutucuk genişliği için gereken stil ayarları */
-    box-shadow: 0px 0px 10px $greenColor;
+    flex: 0 0 calc(25% - 20px);
+    box-shadow: 0px 0px 5px black;
     padding: 10px;
-    margin: 10px;
-    background-color: $creamColor;
+    margin: 10px 10px 8vw 10px;
+    background-color: #e3f2fd;
     border-radius: 5px;
     text-align: center;
     .titleAndAnsw {
@@ -44,7 +44,7 @@
       text-align: center;
       padding-left: 50px;
       h4 {
-        color: rgba(0, 0, 0, 0.74);
+        color: black;
         font-weight: 500;
       }
       h5 {
@@ -60,13 +60,13 @@
         margin-right: 20px;
         @extend .borderShow;
         background-color: brown;
-        color: $creamColor;
+        color: white;
       }
       .buttonUpdate {
         margin-right: 20px;
         @extend .borderShow;
-        background-color: $greenColor;
-        color: $creamColor;
+        background-color: #0d47a1;
+        color: white;
       }
     }
   }

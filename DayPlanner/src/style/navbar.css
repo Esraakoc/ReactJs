@@ -14,36 +14,29 @@
   bottom: 0;
   left: 0;
   z-index: 2;
-  background-color: #606c38;
+  background-color: white;
   height: 80px;
   margin-bottom: 30px;
-  box-shadow: 0px 5px 10px #bc6c25;
   border-radius: 8px;
   overflow: hidden;
   transition: box-shadow 0.3s ease;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 .navbarDiv button {
-  margin: 0px 20px 20px 15vw;
+  background-color: white;
   border: none;
-  background-color: #606c38;
-  width: 50px;
   outline: none;
 }
-.navbarDiv .navbarPhoto {
-  height: 4vw;
-  width: 4vw;
-}
-.navbarDiv .title {
-  margin-left: 20px;
-  padding-top: 20px;
-  color: #fefae0;
+.navbarDiv button .title {
+  margin: 20px;
+  color: #c1121f;
 }
 .navbarDiv nav {
-  padding: 30px 20vw 0px 30vw;
+  padding: 30px 20vw 0px 40vw;
   text-align: right;
 }
 .navbarDiv nav .navbarLink {
-  color: #fefae0;
+  color: #c1121f;
   font-size: 20px;
   font-weight: bolder;
   text-decoration: underline;

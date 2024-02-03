@@ -8,12 +8,12 @@
   border-radius: 5px;
 }
 
-.font, .loginDiv .loginBtn, .loginDiv .notYetRegisterDiv .loginLink, .loginDiv .notYetRegisterDiv .loginNotLogin {
+.font, .regDiv .loginBtn, .regDiv .notYetRegisterDiv .loginLink, .regDiv .notYetRegisterDiv .loginNotLogin {
   font-weight: bold;
   font-size: large;
 }
 
-.common-input, .loginDiv .inputPassword, .loginDiv .inputEmail {
+.common-input, .regDiv .inputPassword, .regDiv .inputEmail, .regDiv .inputName {
   width: 86vw;
   height: 45px;
   border: none;
@@ -22,32 +22,35 @@
   padding-left: 25px;
 }
 
-.loginDiv {
+.regDiv {
   margin: 3vw 0px 33vw 6vw;
 }
-.loginDiv .login {
+.regDiv .reg {
   margin-bottom: 0px;
 }
-.loginDiv .loginLine {
+.regDiv .regLine {
   margin-bottom: 5px;
   background-color: #000;
   width: 87.5vw;
   height: 2px;
 }
-.loginDiv .inputEmail {
-  margin: 20px 0px 15px 0px;
+.regDiv .inputName {
+  margin: 20px 0px 0px 0px;
 }
-.loginDiv .inputPassword {
+.regDiv .inputEmail {
+  margin: 15px 0px 15px 0px;
+}
+.regDiv .inputPassword {
   margin-bottom: 15px;
 }
-.loginDiv .notYetRegisterDiv {
+.regDiv .notYetRegisterDiv {
   display: flex;
 }
-.loginDiv .notYetRegisterDiv .loginLink {
+.regDiv .notYetRegisterDiv .loginLink {
   margin-left: 5px;
   color: #3498db;
 }
-.loginDiv .loginBtn {
+.regDiv .loginBtn {
   margin-top: 10px;
   border: none;
   border-radius: 5px;
@@ -55,4 +58,4 @@
   height: 2vw;
   background-color: #3498db;
   color: white;
-}/*# sourceMappingURL=Login.css.map */
+}/*# sourceMappingURL=register.css.map */

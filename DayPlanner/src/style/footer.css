@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .button-size {
   width: 8vw;
   height: 2vw;
@@ -16,8 +15,6 @@
   z-index: 2;
   width: 100%;
   height: 6vw;
-  background-color: #606c38;
   margin-top: 15vw;
-  border: none;
-  box-shadow: 0px 0px 20px white; /* Gölge efekti */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }/*# sourceMappingURL=footer.css.map */

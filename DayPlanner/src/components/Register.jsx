@@ -1,15 +1,19 @@
 import React from "react";
-import "../style/login.css";
+import "../style/register.css";
 import {Link} from "react-router-dom";
 
-function LogIn() {
+function Register() {
   return (
-    <div className="loginDiv">
+    <div className="regDiv">
       <div>
-        <h1 className="login">LOGIN</h1>
-        <div className="loginLine"></div>
+        <h1 className="reg">REGISTER</h1>
+        <div className="regLine"></div>
       </div>
       <div>
+        <input
+          className="inputName"
+          placeholder="NAME and SURNAME"
+        />
         <input
           className="inputEmail"
           placeholder="EMAIL"
@@ -20,17 +24,17 @@ function LogIn() {
         />
       </div>
       <div className="notYetRegisterDiv">
-        <div className="loginNotLogin">Not yet registered? </div>
+        <div className="loginNotLogin">Are you already a member?</div>
         <Link
-          to="/register"
+          to="/login"
           className="loginLink"
         >
-          Register
+          Login
         </Link>
       </div>
-      <button className="loginBtn">Login</button>
+      <button className="loginBtn">Sign up</button>
     </div>
   );
 }
 
-export default LogIn;
+export default Register;

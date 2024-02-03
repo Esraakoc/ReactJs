@@ -8,6 +8,7 @@ import {Routes, Route} from "react-router-dom";
 import ShowPlans from "./components/ShowPlans";
 import Footer from "./components/Footer";
 import Login from "./components/Login";
+import Register from "./components/Register";
 
 function App() {
   const dispatch = useDispatch();
@@ -29,6 +30,10 @@ function App() {
         <Route
           path="/login"
           element={<Login />}
+        />
+        <Route
+          path="/register"
+          element={<Register />}
         />
       </Routes>
       <Footer />

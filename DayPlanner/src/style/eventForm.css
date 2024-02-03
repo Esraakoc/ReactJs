@@ -10,9 +10,8 @@
 
 .commonInput, .eventFormDiv form textarea, .eventFormDiv form select, .eventFormDiv form input {
   margin-bottom: 10px;
-  border: none;
+  border: 1px solid black;
   border-radius: 5px;
-  background-color: #fefae0;
 }
 
 .eventFormDiv {
@@ -71,10 +70,11 @@
   height: 40px;
 }
 .eventFormDiv form {
+  background-color: #e3f2fd;
   padding: 30px 0px 0px 40px;
   width: 300px;
   height: 450px;
-  background-color: #bc6c25;
+  box-shadow: 0px 0px 10px black;
   border-radius: 15px;
 }
 .eventFormDiv form h5 {
@@ -84,7 +84,7 @@
   margin-top: 1vw;
   border: none;
   border-radius: 5px;
-  background-color: #606c38;
-  color: #fefae0;
+  background-color: #42a5f5;
+  color: white;
   font-weight: bold;
 }/*# sourceMappingURL=eventForm.css.map */

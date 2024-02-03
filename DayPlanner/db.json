@@ -1,19 +1,11 @@
 {
   "event": [
     {
-      "id": 1,
-      "date": "Fri Nov 03 2023",
-      "name": "Dentist",
-      "hour": "09:30",
-      "note": "Go to dentist",
-      "location": "Maltepe"
-    },
-    {
       "date": "Thu Nov 30 2023",
-      "hour": "886666",
-      "name": "gdsf",
-      "note": "sdfgsdf",
-      "location": "fbsdfg",
+      "hour": "999",
+      "name": "sdgsd",
+      "note": "dgsdg",
+      "location": "fsdgs",
       "id": 4
     },
     {

@@ -11,18 +11,22 @@
   padding-left: 25px;
 }
 
-.loginDiv {
+.regDiv {
   margin: 3vw 0px 33vw 6vw;
-  .login {
+  .reg {
     margin-bottom: 0px;
   }
-  .loginLine {
+  .regLine {
     margin-bottom: 5px;
     background-color: #000;
     @include size(87.5vw, 2px);
   }
+  .inputName {
+    margin: 20px 0px 0px 0px;
+    @extend .common-input;
+  }
   .inputEmail {
-    margin: 20px 0px 15px 0px;
+    margin: 15px 0px 15px 0px;
     @extend .common-input;
   }
   .inputPassword {

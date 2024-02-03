@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import {useState} from "react";
 import Calendar from "react-calendar";
 import "../style/Calendar.css";
 import EventForm from "./EventForm";
@@ -8,7 +8,7 @@ import {setFoundData} from "../store/slice/dataSlice";
 
 const MyCalendar = () => {
   const dispatch = useDispatch();
-  const {events, foundData} = useSelector((state) => state.user);
+  const {events} = useSelector((state) => state.user);
   //useState value değerlerinin tutulduğu yer
   const [date, setDate] = useState(new Date());
   const [event, setEvent] = useState(false);
@@ -36,14 +36,16 @@ const MyCalendar = () => {
 
   return (
     <div className="myCalendarDiv">
-      <h2 style={{marginBottom: "1vw", color: "#582f0e"}}>Agenda</h2>
-      <div style={{display: "flex"}}>
+      <h2 className="agenda">
+        <span>Agenda</span>
+      </h2>
+      <div className="eventDiv">
         {show ? <ShowEventForm /> : <div></div>}
         <Calendar
           onChange={onChange}
           value={date}
         />
-        {event ? <EventForm date={selectedDate} /> : <div></div>}
+        <EventForm date={selectedDate} />
       </div>
     </div>
   );
