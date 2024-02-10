@@ -12,6 +12,12 @@ function Navbar() {
       <nav>
         <Link
           className="navbarLink"
+          to="/create"
+        >
+          Create a Plan
+        </Link>
+        <Link
+          className="navbarLink"
           to="/show_plans"
         >
           Show Plans

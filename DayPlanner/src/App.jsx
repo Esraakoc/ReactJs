@@ -9,18 +9,23 @@ import ShowPlans from "./components/ShowPlans";
 import Footer from "./components/Footer";
 import Login from "./components/Login";
 import Register from "./components/Register";
-
+import AboutUs from "./components/AboutUs";
+import Home from "./components/Home";
 function App() {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(gettedEventActions());
   }, []);
   return (
-    <div className="appDiv">
+    <div className="app">
       <Navbar />
       <Routes>
         <Route
           path="/"
+          element={<Home />}
+        />
+        <Route
+          path="/create"
           element={<MyCalendar />}
         />
         <Route
@@ -34,6 +39,10 @@ function App() {
         <Route
           path="/register"
           element={<Register />}
+        />
+        <Route
+          path="/aboutUs"
+          element={<AboutUs />}
         />
       </Routes>
       <Footer />

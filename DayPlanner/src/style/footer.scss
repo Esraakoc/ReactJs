@@ -1,11 +1,36 @@
 @import "variables";
 
 .footerDiv {
-  position: relative;
-  bottom: 0;
-  left: 0;
+  margin-top: auto;
   z-index: 2;
-  @include size(100%, 6vw);
-  margin-top: 15vw;
+  height: 10vw;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  padding: 25px;
+  display: flex;
+  .aboutUs-link {
+    margin-left: 10vw;
+    font-size: 20px;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .socialMedia {
+    margin-left: 40vw;
+    h3 {
+      margin-left: 2vw;
+    }
+    ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+      li a {
+        color: #666;
+        svg {
+          font-size: 23px;
+        }
+      }
+    }
+  }
+  .dropdown {
+    margin-left: 9vw;
+  }
 }

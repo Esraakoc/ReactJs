@@ -23,7 +23,7 @@
 }
 
 .loginDiv {
-  margin: 3vw 0px 33vw 6vw;
+  margin: 0vw 0px 5vw 6vw;
 }
 .loginDiv .login {
   margin-bottom: 0px;
@@ -55,4 +55,4 @@
   height: 2vw;
   background-color: #3498db;
   color: white;
-}/*# sourceMappingURL=Login.css.map */
+}/*# sourceMappingURL=login.css.map */

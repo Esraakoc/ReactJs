@@ -1,0 +1,58 @@
+.aboutUs-general {
+  justify-content: center;
+  .img-container {
+    position: relative;
+    .aboutus-div {
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      text-align: center;
+      padding: 0 30vw 0 30vw;
+      height: 45vw;
+      width: 99vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      h1 {
+        font-family: "Montserrat", sans-serif;
+      }
+      p {
+        font-family: "Open Sans", sans-serif;
+      }
+    }
+  }
+
+  .ourMission-div {
+    background-color: #f3f5f7;
+    display: flex;
+    padding: 4vw 1vw 2vw 10vw;
+    .ourMission-text {
+      padding: 7vw 0 2vw 5vw;
+      h1 {
+        font-family: "Montserrat", sans-serif;
+      }
+      p {
+        font-family: "Open Sans", sans-serif;
+      }
+    }
+    .images {
+      padding: 2vw 10vw 0 2vw;
+    }
+    .images1,
+    .images2,
+    .images3 {
+      height: 15vw;
+    }
+    .images1,
+    .images2 {
+      width: 20vw;
+      margin-right: 20px;
+    }
+    .images3 {
+      margin-left: 6vw;
+      margin-top: 20px;
+      width: 30vw;
+    }
+  }
+}

@@ -10,13 +10,9 @@
 
 .navbarDiv {
   display: flex;
-  position: relative;
-  bottom: 0;
-  left: 0;
   z-index: 2;
   background-color: white;
   height: 80px;
-  margin-bottom: 30px;
   border-radius: 8px;
   overflow: hidden;
   transition: box-shadow 0.3s ease;
