@@ -26,7 +26,15 @@ function ShowEventForm() {
               <p> {foundEvent.date}</p>
             </div>
             <div style={{display: "flex"}}>
-              <h5>Hour: </h5> <p>{foundEvent.hour}</p>
+              <h5>Hours: </h5> <span>{foundEvent.hour1}</span>
+              <span>-{foundEvent.hour2}-</span>
+              <span>{foundEvent.hour3}</span>
+            </div>
+            <div className="button-hours">
+              <p>Which time suits you?</p>
+              <button>{foundEvent.hour1}</button>
+              <button>{foundEvent.hour2}</button>
+              <button>{foundEvent.hour3}</button>
             </div>
             <div style={{display: "flex"}}>
               <h5>Note: </h5> <p>{foundEvent.note}</p>

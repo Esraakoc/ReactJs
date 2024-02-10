@@ -19,8 +19,16 @@
   box-shadow: 0px 0px 10px black;
 }
 .showDiv div {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 .showDiv div h5 {
+  font-weight: bold;
+}
+.showDiv .button-hours button {
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #42a5f5;
+  color: white;
   font-weight: bold;
 }/*# sourceMappingURL=ShowEventForm.css.map */

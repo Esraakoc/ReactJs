@@ -80,6 +80,9 @@
 .eventFormDiv form h5 {
   font-weight: bold;
 }
+.eventFormDiv form select {
+  margin-right: 10px;
+}
 .eventFormDiv form button {
   margin-top: 1vw;
   border: none;

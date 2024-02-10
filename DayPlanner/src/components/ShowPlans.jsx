@@ -82,8 +82,12 @@ function ShowPlans() {
                     <h5>{event.date}</h5>
                   </div>
                   <div className="titleAndAnsw">
-                    <h4>Hour: </h4>
-                    <h5>{event.hour}</h5>
+                    <h4>1.Hour: </h4>
+                    <h5>{event.hour1}</h5>
+                    <h4>2.Hour: </h4>
+                    <h5>{event.hour2}</h5>
+                    <h4>3.Hour: </h4>
+                    <h5>{event.hour3}</h5>
                   </div>
                   <div className="titleAndAnsw">
                     <h4>Event Name: </h4>

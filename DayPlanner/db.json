@@ -1,25 +1,11 @@
 {
   "event": [
     {
-      "date": "Thu Nov 30 2023",
-      "hour": "999",
-      "name": "sdgsd",
-      "note": "dgsdg",
-      "location": "fsdgs",
-      "id": 4
-    },
-    {
-      "date": "Thu Nov 30 2023",
-      "hour": "55",
-      "name": "ghjghk",
-      "note": "bhn",
-      "location": "kbvhjk",
-      "id": 5
-    },
-    {
       "date": "Thu Jan 18 2024",
       "name": " gvgv",
-      "hour": "02:30",
+      "hour1": "02:30",
+      "hour2": "04:30",
+      "hour3": "06:30",
       "note": "vtggvtgv",
       "location": "gtvgt",
       "id": 6
@@ -27,7 +13,9 @@
     {
       "date": "Mon Feb 05 2024",
       "name": "gsdgsd",
-      "hour": "01:00",
+      "hour1": "01:00",
+      "hour2": "02:30",
+      "hour3": "06:30",
       "note": "gsdgsg",
       "location": "sdgsdg",
       "id": 7
@@ -35,7 +23,9 @@
     {
       "date": "Fri Feb 16 2024",
       "name": "hjdfgj",
-      "hour": "01:00",
+      "hour1": "01:00",
+      "hour2": "02:30",
+      "hour3": "06:30",
       "note": "fgjdgj",
       "location": "jdfjgd",
       "id": 8
@@ -43,7 +33,9 @@
     {
       "date": "Fri Feb 16 2024",
       "name": "jhdgj",
-      "hour": "00:30",
+      "hour1": "00:30",
+      "hour2": "02:30",
+      "hour3": "06:30",
       "note": "fghjgdhj",
       "location": "dghjgf",
       "id": 9
@@ -51,7 +43,9 @@
     {
       "date": "Fri Feb 16 2024",
       "name": "hsgjfgj",
-      "hour": "00:30",
+      "hour1": "00:30",
+      "hour2": "02:30",
+      "hour3": "06:30",
       "note": "djggf",
       "location": "jdj",
       "id": 10
@@ -59,34 +53,32 @@
     {
       "date": "Fri Feb 16 2024",
       "name": "djgj",
-      "hour": "01:00",
+      "hour1": "01:00",
+      "hour2": "02:30",
+      "hour3": "06:30",
       "note": "dgjdj",
       "location": "dfgjd",
       "id": 11
     },
     {
-      "date": "Fri Feb 16 2024",
-      "name": "djfgj",
-      "hour": "01:30",
-      "note": "djgd",
-      "location": "djgtj",
+      "date": "Sat Feb 17 2024",
+      "name": "sgdgsdg",
+      "hour1": "16:00",
+      "hour2": "17:00",
+      "hour3": "18:00",
+      "note": "fsdfg",
+      "location": "sdgsd",
       "id": 12
     },
     {
-      "date": "Wed Feb 21 2024",
-      "name": "dfgdg",
-      "hour": "01:00",
-      "note": "dfgdfg",
-      "location": "dgf",
+      "date": null,
+      "name": "",
+      "hour1": "",
+      "hour2": "",
+      "hour3": "",
+      "note": "",
+      "location": "",
       "id": 13
-    },
-    {
-      "date": "Tue Feb 20 2024",
-      "name": "gsdgd",
-      "hour": "01:00",
-      "note": "fgdfg",
-      "location": "dfg",
-      "id": 14
     }
   ]
 }

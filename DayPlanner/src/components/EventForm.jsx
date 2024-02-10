@@ -15,13 +15,21 @@ function EventForm({date, eventId, updateOpen, onUpdate}) {
   //   dispatch(gettedEventActions());
   // }, [eventId]);
   const dispatch = useDispatch();
-  const [hour, setHour] = useState(eventId ? events.hour : "");
+  const [hour1, setHour1] = useState(eventId ? events.hour1 : "");
+  const [hour2, setHour2] = useState(eventId ? events.hour2 : "");
+  const [hour3, setHour3] = useState(eventId ? events.hour3 : "");
   const [name, setName] = useState(eventId ? events.name : "");
   const [note, setNote] = useState(eventId ? events.note : "");
   const [location, setLocation] = useState(eventId ? events.location : "");
   //onChange Arrow Functionları
   const handleSelectChange = (e) => {
-    setHour(e.target.value);
+    setHour1(e.target.value);
+  };
+  const handleSelectSecondChange = (e) => {
+    setHour2(e.target.value);
+  };
+  const handleSelectThirdChange = (e) => {
+    setHour3(e.target.value);
   };
   const handleChangeName = (e) => {
     setName(e.target.value);
@@ -36,10 +44,12 @@ function EventForm({date, eventId, updateOpen, onUpdate}) {
   //button'a basıldığında çalışacak olan Arrow function
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    const newEvent = {date, name, hour, note, location};
+    const newEvent = {date, name, hour1, hour2, hour3, note, location};
     dispatch(sendEventActions(newEvent));
     setName("");
-    setHour("");
+    setHour1("");
+    setHour2("");
+    setHour3("");
     setNote("");
     setLocation("");
   };
@@ -84,13 +94,25 @@ function EventForm({date, eventId, updateOpen, onUpdate}) {
                   <h4>Hour: </h4>
                   <input
                     className="hourInput"
-                    value={hour}
-                    onChange={(e) => setHour(e.target.value)}
-                    placeholder={event.hour}
+                    value={hour1}
+                    onChange={(e) => setHour1(e.target.value)}
+                    placeholder={event.hour1}
+                  />
+                  <input
+                    className="hourInput"
+                    value={hour2}
+                    onChange={(e) => setHour2(e.target.value)}
+                    placeholder={event.hour1}
+                  />
+                  <input
+                    className="hourInput"
+                    value={hour3}
+                    onChange={(e) => setHour3(e.target.value)}
+                    placeholder={event.hour1}
                   />
                 </div>
                 <div className="titleAndAnsw">
-                  <h4>Event Name: </h4> 
+                  <h4>Event Name: </h4>
                   <input
                     className="nameInput"
                     value={name}
@@ -125,7 +147,9 @@ function EventForm({date, eventId, updateOpen, onUpdate}) {
                         onUpdate(
                           eventId,
                           event.date,
-                          hour,
+                          hour1,
+                          hour2,
+                          hour3,
                           name,
                           note,
                           location
@@ -134,7 +158,9 @@ function EventForm({date, eventId, updateOpen, onUpdate}) {
                         onUpdate(
                           eventId,
                           event.date,
-                          event.hour,
+                          event.hour1,
+                          event.hour2,
+                          event.hour3,
                           event.name,
                           event.note,
                           event.location
@@ -163,8 +189,20 @@ function EventForm({date, eventId, updateOpen, onUpdate}) {
               <QueryBuilderIcon /> Hour
             </h5>
             <select
-              value={hour}
+              value={hour1}
               onChange={handleSelectChange}
+            >
+              {generateOptions()}
+            </select>
+            <select
+              value={hour2}
+              onChange={handleSelectSecondChange}
+            >
+              {generateOptions()}
+            </select>
+            <select
+              value={hour3}
+              onChange={handleSelectThirdChange}
             >
               {generateOptions()}
             </select>

@@ -11,8 +11,8 @@ function AddDropdown({dropdownButton, options, bgColor}) {
           {dropdownButton}
         </Dropdown.Toggle>
         <Dropdown.Menu>
-          {options.map((option) => (
-            <Dropdown.Item>{option}</Dropdown.Item>
+          {options.map((option, index) => (
+            <Dropdown.Item key={index}>{option}</Dropdown.Item>
           ))}
         </Dropdown.Menu>
       </Dropdown>
