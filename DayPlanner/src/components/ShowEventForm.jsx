@@ -1,13 +1,19 @@
-import React from "react";
-import {useSelector} from "react-redux";
+import React, {useState} from "react";
+import {useDispatch, useSelector} from "react-redux";
 import "../style/ShowEventForm.css";
+import {ClockUpdateActions} from "../Api";
 
 function ShowEventForm() {
+  const dispatch = useDispatch();
   const {events, foundData} = useSelector((state) => {
     return state.user;
   });
   //seçilen tarih ile events içindeki aynı tarihteki event'i arar ve onu foundEventste tutar
   const foundEvents = events.filter((event) => event.date === foundData);
+
+  const handleVote = (eventId, vote) => {
+    dispatch(ClockUpdateActions(eventId, vote));
+  };
   return (
     <div className="showDiv">
       <h3>Event Details</h3>
@@ -31,10 +37,22 @@ function ShowEventForm() {
               <span>{foundEvent.hour3}</span>
             </div>
             <div className="button-hours">
-              <p>Which time suits you?</p>
-              <button>{foundEvent.hour1}</button>
-              <button>{foundEvent.hour2}</button>
-              <button>{foundEvent.hour3}</button>
+              <p>🕐Which time suits you?</p>
+              <button onClick={() => handleVote(foundEvent.id, "choice1")}>
+                {foundEvent.hour1} <span>(%50)</span>
+              </button>
+              <button onClick={() => handleVote(foundEvent.id, "choice2")}>
+                {foundEvent.hour2}
+                <span>(%50)</span>
+              </button>
+              <button onClick={() => handleVote(foundEvent.id, "choice3")}>
+                {foundEvent.hour3}
+                <span>(%50)</span>
+              </button>
+              <button onClick={() => handleVote(foundEvent.id, "none")}>
+                none
+                <span>(%50)</span>
+              </button>
             </div>
             <div style={{display: "flex"}}>
               <h5>Note: </h5> <p>{foundEvent.note}</p>

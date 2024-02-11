@@ -28,3 +28,26 @@ export const CompleteUpdateActions = (newEvents, id) => async (dispatch) => {
   debugger;
   dispatch(CompleteUpdate(respose.data));
 };
+export const ClockUpdateActions =
+  (eventId, vote) => async (dispatch, getState) => {
+    try {
+      const {events} = getState().user;
+      const foundEvent = events.find((event) => event.id === eventId);
+      if (foundEvent) {
+        const updatedVote = `${vote}`;
+        const totalVotes = `totalChocice`;
+        const updatedEvent = {
+          ...foundEvent,
+          [updatedVote]: foundEvent[updatedVote] + 1,
+          [totalVotes]: foundEvent[totalVotes] + 1,
+        };
+        const response = await axios.put(
+          `http://localhost:3000/event/${eventId}`,
+          updatedEvent
+        );
+      }
+    } catch (error) {
+      console.error("Clock Update Error:", error);
+      throw error;
+    }
+  };

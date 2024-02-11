@@ -32,11 +32,17 @@ const dataSlice = createSlice({
         if (event.id === actions.payload.id) {
           return {
             ...event,
-            date: actions.payload.date,
-            hour: actions.payload.hour,
-            name: actions.payload.name,
-            note: actions.payload.note,
-            location: actions.payload.location,
+            // date: actions.payload.date,
+            // hour: actions.payload.hour,
+            // name: actions.payload.name,
+            // note: actions.payload.note,
+            // location: actions.payload.location,
+            choice1:
+              event.choice1 + (actions.payload.choice1 === "choice1" ? 1 : 0),
+            choice2:
+              event.choice2 + (actions.payload.choice2 === "choice2" ? 1 : 0),
+            choice3:
+              event.choice3 + (actions.payload.choice3 === "choice3" ? 1 : 0),
           };
         }
         return event;

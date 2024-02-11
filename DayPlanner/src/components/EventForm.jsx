@@ -21,6 +21,11 @@ function EventForm({date, eventId, updateOpen, onUpdate}) {
   const [name, setName] = useState(eventId ? events.name : "");
   const [note, setNote] = useState(eventId ? events.note : "");
   const [location, setLocation] = useState(eventId ? events.location : "");
+  const choice1 = 0;
+  const choice2 = 0;
+  const choice3 = 0;
+  const none = 0;
+  const totalChocice = 0;
   //onChange Arrow Functionları
   const handleSelectChange = (e) => {
     setHour1(e.target.value);
@@ -44,15 +49,31 @@ function EventForm({date, eventId, updateOpen, onUpdate}) {
   //button'a basıldığında çalışacak olan Arrow function
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    const newEvent = {date, name, hour1, hour2, hour3, note, location};
+    const newEvent = {
+      date,
+      name,
+      hour1,
+      hour2,
+      hour3,
+      note,
+      location,
+      choice1,
+      choice2,
+      choice3,
+      none,
+      totalChocice,
+    };
     dispatch(sendEventActions(newEvent));
-    setName("");
     setHour1("");
     setHour2("");
     setHour3("");
+    setName("");
     setNote("");
     setLocation("");
   };
+
+  //button'a basıldığında çalışacak olan Arrow function
+
   //30 dakika aralıklarla olan saat optionları
   const generateOptions = () => {
     const options = [];
