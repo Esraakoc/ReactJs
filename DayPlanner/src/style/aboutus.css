@@ -24,33 +24,38 @@
   font-family: "Open Sans", sans-serif;
 }
 .aboutUs-general .ourMission-div {
-  background-color: #f3f5f7;
-  display: flex;
-  padding: 4vw 1vw 2vw 10vw;
+  position: relative;
 }
-.aboutUs-general .ourMission-div .ourMission-text {
+.aboutUs-general .ourMission-div .color-container {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  padding: 7vw 1vw 2vw 10vw;
+  display: flex;
+}
+.aboutUs-general .ourMission-div .color-container .ourMission-text {
   padding: 7vw 0 2vw 5vw;
 }
-.aboutUs-general .ourMission-div .ourMission-text h1 {
+.aboutUs-general .ourMission-div .color-container .ourMission-text h1 {
   font-family: "Montserrat", sans-serif;
 }
-.aboutUs-general .ourMission-div .ourMission-text p {
+.aboutUs-general .ourMission-div .color-container .ourMission-text p {
   font-family: "Open Sans", sans-serif;
 }
-.aboutUs-general .ourMission-div .images {
+.aboutUs-general .ourMission-div .color-container .images {
   padding: 2vw 10vw 0 2vw;
 }
-.aboutUs-general .ourMission-div .images1,
-.aboutUs-general .ourMission-div .images2,
-.aboutUs-general .ourMission-div .images3 {
+.aboutUs-general .ourMission-div .color-container .images1,
+.aboutUs-general .ourMission-div .color-container .images2,
+.aboutUs-general .ourMission-div .color-container .images3 {
   height: 15vw;
 }
-.aboutUs-general .ourMission-div .images1,
-.aboutUs-general .ourMission-div .images2 {
+.aboutUs-general .ourMission-div .color-container .images1,
+.aboutUs-general .ourMission-div .color-container .images2 {
   width: 20vw;
   margin-right: 20px;
 }
-.aboutUs-general .ourMission-div .images3 {
+.aboutUs-general .ourMission-div .color-container .images3 {
   margin-left: 6vw;
   margin-top: 20px;
   width: 30vw;

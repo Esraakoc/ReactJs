@@ -5,8 +5,10 @@ import EventForm from "./EventForm";
 import ShowEventForm from "./ShowEventForm";
 import {useDispatch, useSelector} from "react-redux";
 import {setFoundData} from "../store/slice/dataSlice";
+import {useUser} from "../UserContext";
 
 const MyCalendar = () => {
+  const {user} = useUser();
   const dispatch = useDispatch();
   const {events} = useSelector((state) => state.user);
   //useState value değerlerinin tutulduğu yer
@@ -35,19 +37,23 @@ const MyCalendar = () => {
   };
 
   return (
-    <div className="myCalendarDiv">
-      <h2 className="agenda">
-        <span>Agenda</span>
-      </h2>
-      <div className="eventDiv">
-        {show ? <ShowEventForm /> : <div></div>}
-        <Calendar
-          onChange={onChange}
-          value={date}
-        />
-        <EventForm date={selectedDate} />
-      </div>
-    </div>
+    <>
+      {user && (
+        <div className="myCalendarDiv">
+          <h2 className="agenda">
+            <span>Agenda</span>
+          </h2>
+          <div className="eventDiv">
+            {show ? <ShowEventForm /> : <div></div>}
+            <Calendar
+              onChange={onChange}
+              value={date}
+            />
+            <EventForm date={selectedDate} />
+          </div>
+        </div>
+      )}
+    </>
   );
 };
 

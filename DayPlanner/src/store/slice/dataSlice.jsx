@@ -27,6 +27,24 @@ const dataSlice = createSlice({
       });
       state.events = deleteEvent;
     },
+    UpdateChoices: (state, actions) => {
+      const updatedEvents = state.events.map((event) => {
+        if (event.id === actions.payload.id) {
+          return {
+            ...event,
+
+            choice1:
+              event.choice1 + (actions.payload.choice1 === "choice1" ? 1 : 0),
+            choice2:
+              event.choice2 + (actions.payload.choice2 === "choice2" ? 1 : 0),
+            choice3:
+              event.choice3 + (actions.payload.choice3 === "choice3" ? 1 : 0),
+          };
+        }
+        return event;
+      });
+      state.events = updatedEvents;
+    },
     CompleteUpdate: (state, actions) => {
       const updatedEvents = state.events.map((event) => {
         if (event.id === actions.payload.id) {
@@ -37,12 +55,6 @@ const dataSlice = createSlice({
             // name: actions.payload.name,
             // note: actions.payload.note,
             // location: actions.payload.location,
-            choice1:
-              event.choice1 + (actions.payload.choice1 === "choice1" ? 1 : 0),
-            choice2:
-              event.choice2 + (actions.payload.choice2 === "choice2" ? 1 : 0),
-            choice3:
-              event.choice3 + (actions.payload.choice3 === "choice3" ? 1 : 0),
           };
         }
         return event;
@@ -58,5 +70,6 @@ export const {
   changeSearchs,
   deletedEvent,
   CompleteUpdate,
+  UpdateChoices,
 } = dataSlice.actions;
 export default dataSlice.reducer;

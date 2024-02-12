@@ -1,6 +1,7 @@
 import axios from "axios";
 import {
   CompleteUpdate,
+  UpdateChoices,
   deletedEvent,
   gettedEvent,
   sendEvent,
@@ -45,6 +46,7 @@ export const ClockUpdateActions =
           `http://localhost:3000/event/${eventId}`,
           updatedEvent
         );
+        dispatch(UpdateChoices(response.data));
       }
     } catch (error) {
       console.error("Clock Update Error:", error);

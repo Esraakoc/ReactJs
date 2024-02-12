@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import "../style/ShowEventForm.css";
-import {ClockUpdateActions} from "../Api";
+import {ClockUpdateActions, gettedEventActions} from "../Api";
 
 function ShowEventForm() {
   const dispatch = useDispatch();
@@ -12,7 +12,19 @@ function ShowEventForm() {
   const foundEvents = events.filter((event) => event.date === foundData);
 
   const handleVote = (eventId, vote) => {
-    dispatch(ClockUpdateActions(eventId, vote));
+    dispatch(ClockUpdateActions(eventId, vote))
+      .then(() => {
+        dispatch(gettedEventActions());
+      })
+      .catch((error) => {
+        console.error("Error occurred while handling vote:", error);
+      });
+  };
+
+  const calculatePercentage = (votes, totalChocice) => {
+    debugger;
+    const percentage = (votes / totalChocice) * 100;
+    return totalChocice === 0 ? "0%" : `${percentage.toFixed(2)}%`;
   };
   return (
     <div className="showDiv">
@@ -39,19 +51,48 @@ function ShowEventForm() {
             <div className="button-hours">
               <p>🕐Which time suits you?</p>
               <button onClick={() => handleVote(foundEvent.id, "choice1")}>
-                {foundEvent.hour1} <span>(%50)</span>
+                {foundEvent.hour1}{" "}
+                <span>
+                  (
+                  {calculatePercentage(
+                    foundEvent.choice1,
+                    foundEvent.totalChocice
+                  )}
+                  )
+                </span>
               </button>
               <button onClick={() => handleVote(foundEvent.id, "choice2")}>
                 {foundEvent.hour2}
-                <span>(%50)</span>
+                <span>
+                  (
+                  {calculatePercentage(
+                    foundEvent.choice2,
+                    foundEvent.totalChocice
+                  )}
+                  )
+                </span>
               </button>
               <button onClick={() => handleVote(foundEvent.id, "choice3")}>
                 {foundEvent.hour3}
-                <span>(%50)</span>
+                <span>
+                  (
+                  {calculatePercentage(
+                    foundEvent.choice3,
+                    foundEvent.totalChocice
+                  )}
+                  )
+                </span>
               </button>
               <button onClick={() => handleVote(foundEvent.id, "none")}>
                 none
-                <span>(%50)</span>
+                <span>
+                  (
+                  {calculatePercentage(
+                    foundEvent.none,
+                    foundEvent.totalChocice
+                  )}
+                  )
+                </span>
               </button>
             </div>
             <div style={{display: "flex"}}>
