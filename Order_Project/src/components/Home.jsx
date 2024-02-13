@@ -13,7 +13,7 @@ function Home() {
         src={pizza}
       />
       <div className="image-overlay">
-        <div>
+        <div> 
           <div className="home-logo-pizza">
             <img
               className="homeLogo"
