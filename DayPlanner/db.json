@@ -179,6 +179,36 @@
       "none": 0,
       "totalChocice": 1,
       "id": 18
+    },
+    {
+      "date": "Fri Feb 23 2024",
+      "name": "meeting",
+      "hour1": "01:00",
+      "hour2": "01:00",
+      "hour3": "01:30",
+      "note": "Software meeting",
+      "location": "online",
+      "choice1": 1,
+      "choice2": 0,
+      "choice3": 2,
+      "none": 1,
+      "totalChocice": 4,
+      "id": 19
+    },
+    {
+      "date": "Tue Feb 27 2024",
+      "name": "meeting",
+      "hour1": "17:30",
+      "hour2": "19:30",
+      "hour3": "20:00",
+      "note": "software meeting",
+      "location": "online",
+      "choice1": 1,
+      "choice2": 2,
+      "choice3": 0,
+      "none": 0,
+      "totalChocice": 3,
+      "id": 20
     }
   ],
   "users": [

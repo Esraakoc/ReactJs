@@ -15,7 +15,7 @@
       "description": "(The trend is valid for pizzas. There is a price difference when changing the category.)",
       "img": "./src/images/campaigns/buyuk-boy-pizza-cokomania-1-lt-pepsi.jpg",
       "price": 380,
-      "quantity": 0,
+      "quantity": 1,
       "category": "campaigns Pizzas"
     },
     {
@@ -414,6 +414,15 @@
       "img": "./src/images/campaigns/buyuk-pizza-1-lt-icecek-2-cartedor.jpg",
       "price": 370,
       "quantity": 2,
+      "category": "campaigns Pizzas"
+    },
+    {
+      "id": "campaigns2",
+      "title": "Large Pizza + Çokomania + Pepsi",
+      "description": "(The trend is valid for pizzas. There is a price difference when changing the category.)",
+      "img": "./src/images/campaigns/buyuk-boy-pizza-cokomania-1-lt-pepsi.jpg",
+      "price": 380,
+      "quantity": 1,
       "category": "campaigns Pizzas"
     }
   ]
