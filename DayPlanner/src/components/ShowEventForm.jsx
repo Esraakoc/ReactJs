@@ -4,7 +4,7 @@ import "../style/ShowEventForm.css";
 import {ClockUpdateActions, gettedEventActions} from "../Api";
 
 function ShowEventForm() {
-  const dispatch = useDispatch();
+  const dispatch = useDispatch(); 
   const {events, foundData} = useSelector((state) => {
     return state.user;
   });

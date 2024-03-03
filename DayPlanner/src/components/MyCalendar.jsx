@@ -44,7 +44,13 @@ const MyCalendar = () => {
             <span>Agenda</span>
           </h2>
           <div className="eventDiv">
-            {show ? <ShowEventForm /> : <div></div>}
+            {show ? (
+              <ShowEventForm />
+            ) : (
+              <div style={{visibility: "hidden"}}>
+                <ShowEventForm />
+              </div>
+            )}
             <Calendar
               onChange={onChange}
               value={date}
