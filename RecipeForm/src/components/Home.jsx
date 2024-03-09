@@ -20,7 +20,7 @@ function Home() {
   );
 
   return (
-    <div className="homeDiv">
+    <div className="homeDiv"  >
       <h6>You can filter recipes based on food scores.</h6>
       <Slider
         value={value}

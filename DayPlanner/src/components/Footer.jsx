@@ -1,14 +1,14 @@
 import React from "react";
 import "../style/footer.css";
-import {Link, useNavigate} from "react-router-dom";
-import {FaInstagram} from "react-icons/fa";
-import {FaFacebook} from "react-icons/fa";
-import {FaTwitter} from "react-icons/fa";
-import {FaTiktok} from "react-icons/fa";
-import {FaPinterest} from "react-icons/fa";
-import {FaYoutube} from "react-icons/fa";
-import {FaSpotify} from "react-icons/fa";
-import {IoMdHome} from "react-icons/io";
+import { Link, useNavigate } from "react-router-dom";
+import { FaInstagram } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa";
+import { FaPinterest } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+import { FaSpotify } from "react-icons/fa";
+import { IoMdHome } from "react-icons/io";
 import AddDropdown from "./AddDropdown";
 
 function Footer() {
@@ -20,7 +20,7 @@ function Footer() {
         <div onClick={() => navigate("/")}>
           <IoMdHome
             href="/"
-            style={{marginBottom: "30px", fontSize: "25px"}}
+            style={{ marginBottom: "30px", fontSize: "25px" }}
           />
         </div>
         <div>

@@ -17,8 +17,8 @@ function AboutUs() {
         <h3>{t("Recipe_Collection")}</h3>
         <label>{t("Explain_RC")}</label>
       </div>
-      <div className="aboutUsFlex">
-        <h3>PersonalRecipes:</h3>
+      <div className="aboutUsFlex" >
+        <h3>PersonalRecipes:</h3  >
         <label>
           You can share your culinary experiences with us. By becoming a member,
           you can add your own recipes through the "addRecipe" page. Capture
