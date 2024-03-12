@@ -2,9 +2,10 @@
 
 .footerDiv {
   position: relative;
+  bottom: 0;
   margin-top: auto;
   z-index: 2;
-  height: 10vw;
+  width: 100%;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   padding: 25px;
 

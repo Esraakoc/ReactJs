@@ -1,16 +1,18 @@
-import React, {useState} from "react";
-import {useDispatch, useSelector} from "react-redux";
+import React, { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import "../style/showPlans.css";
-import {changeSearchs} from "../store/slice/dataSlice";
-import {CompleteUpdateActions, deletedEventActions} from "../Api";
+import { changeSearchs } from "../store/slice/dataSlice";
+import { CompleteUpdateActions, deletedEventActions } from "../Api";
 import EventForm from "./EventForm";
-import {useUser} from "../UserContext";
+import { useUser } from "../UserContext";
+import { IoIosArrowDropupCircle } from "react-icons/io";
+import { animateScroll as scroll } from "react-scroll";
 
 function ShowPlans() {
-  const {user} = useUser();
+  const { user } = useUser();
   const dispatch = useDispatch();
 
-  const {events, searchs} = useSelector((state) => {
+  const { events, searchs } = useSelector((state) => {
     return state.user;
   });
 
@@ -45,10 +47,12 @@ function ShowPlans() {
   const handleUpdateClick = (id, date, hour, name, note, location) => {
     debugger;
     setUpdateOpen(false);
-    const newEvents = {date, hour, name, note, location};
+    const newEvents = { date, hour, name, note, location };
     dispatch(CompleteUpdateActions(newEvents, id));
   };
-
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
   const toggleUpdate = (id) => {
     setEventId(id);
   };
@@ -59,20 +63,14 @@ function ShowPlans() {
           <div className="showPsearch">
             <form onSubmit={handleSubmit}>
               <h2>Search for Event</h2>
-              <input
-                value={search}
-                onChange={handleChange}
-              />
+              <input value={search} onChange={handleChange} />
             </form>
             <button onClick={handleClick}>Show All</button>
           </div>
           <div className="showPmapDiv">
             {filteredEvents.map((event, item) => {
               return (
-                <div
-                  key={item}
-                  className="showPmap"
-                >
+                <div key={item} className="showPmap">
                   {updateOpen && eventId === event.id ? (
                     <EventForm
                       eventId={eventId}
@@ -129,6 +127,11 @@ function ShowPlans() {
                 </div>
               );
             })}
+          </div>
+          <div className="showPdiv_upIcon">
+            <a href="" onClick={scrollToTop}>
+              <IoIosArrowDropupCircle className="upIcon" />
+            </a>
           </div>
         </div>
       )}

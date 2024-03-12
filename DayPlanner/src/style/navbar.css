@@ -9,32 +9,46 @@
 }
 
 .navbarDiv {
+  position: relative;
   display: flex;
   z-index: 2;
-  background-color: white;
+  background-color: #fff;
   height: 80px;
   border-radius: 8px;
   overflow: hidden;
   transition: box-shadow 0.3s ease;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
-.navbarDiv button {
-  background-color: white;
+.navbarDiv .btn {
+  background-color: #fff;
+  cursor: pointer;
+}
+.navbarDiv .homeBtn {
+  height: auto;
+  position: relative;
+  left: 20px;
   border: none;
   outline: none;
 }
-.navbarDiv button .title {
-  margin: 20px;
+.navbarDiv .homeBtn .title {
   color: #c1121f;
 }
 .navbarDiv nav {
-  padding: 30px 20vw 0px 40vw;
-  text-align: right;
+  position: absolute;
+  left: 50%;
+  top: 30px;
 }
 .navbarDiv nav .navbarLink {
   color: #c1121f;
   font-size: 20px;
   font-weight: bolder;
+  padding-left: 20px;
+}
+.navbarDiv nav .navbarLink:hover {
   text-decoration: underline;
-  margin-left: 20px;
+}
+.navbarDiv .createBtn {
+  position: absolute;
+  right: 80px;
+  top: 30px;
 }/*# sourceMappingURL=navbar.css.map */

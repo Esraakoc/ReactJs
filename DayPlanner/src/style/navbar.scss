@@ -1,32 +1,46 @@
 @import "variables";
 
 .navbarDiv {
+  position: relative;
   display: flex;
   z-index: 2;
-  background-color: white;
+  background-color: $main-background-color;
   height: 80px;
   border-radius: 8px;
   overflow: hidden;
   transition: box-shadow 0.3s ease;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-  button {
-    background-color: white;
+  .btn {
+    background-color: $main-background-color;
+    cursor: pointer;
+  }
+  .homeBtn {
+    height: auto;
+    position: relative;
+    left: 20px;
     border: none;
     outline: none;
     .title {
-      margin: 20px;
       color: #c1121f;
     }
   }
   nav {
-    padding: 30px 20vw 0px 40vw;
-    text-align: right;
+    position: absolute;
+    left: 50%;
+    top: 30px;
     .navbarLink {
       color: #c1121f;
       font-size: 20px;
       font-weight: bolder;
-      text-decoration: underline;
-      margin-left: 20px;
+      padding-left: 20px;
     }
+    .navbarLink:hover {
+      text-decoration: underline;
+    }
+  }
+  .createBtn {
+    position: absolute;
+    right: 80px;
+    top: 30px;
   }
 }
