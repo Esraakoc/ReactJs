@@ -67,7 +67,7 @@ function ShowPlans() {
             </form>
             <button onClick={handleClick}>Show All</button>
           </div>
-          <div className="showPmapDiv">
+          <div className="showPmap-main">
             {filteredEvents.map((event, item) => {
               return (
                 <div key={item} className="showPmap">
@@ -79,29 +79,29 @@ function ShowPlans() {
                     />
                   ) : (
                     <>
-                      <div className="titleAndAnsw">
-                        <h4>Date: </h4>
-                        <h5>{event.date}</h5>
+                      <div className="title-answ-main">
+                        <h4 className="text">Date: </h4>
+                        <h5 className="answer">{event.date}</h5>
                       </div>
-                      <div className="titleAndAnsw">
-                        <h4>1.Hour: </h4>
-                        <h5>{event.hour1}</h5>
-                        <h4>2.Hour: </h4>
-                        <h5>{event.hour2}</h5>
-                        <h4>3.Hour: </h4>
-                        <h5>{event.hour3}</h5>
+                      <div className="title-answ-main">
+                        <h4 className="hour-text">1.Hour: </h4>
+                        <h5 className="hour-answer">{event.hour1}</h5>
+                        <h4 className="hour-text">2.Hour: </h4>
+                        <h5 className="hour-answer">{event.hour2}</h5>
+                        <h4 className="hour-text">3.Hour: </h4>
+                        <h5 className="hour-answer">{event.hour3}</h5>
                       </div>
-                      <div className="titleAndAnsw">
-                        <h4>Event Name: </h4>
-                        <h5>{event.name}</h5>
+                      <div className="title-answ-main">
+                        <h4 className="text">Event Name: </h4>
+                        <h5 className="answer">{event.name}</h5>
                       </div>
-                      <div className="titleAndAnsw">
-                        <h4>Event Note: </h4>
-                        <h5>{event.note}</h5>
+                      <div className="title-answ-main">
+                        <h4 className="text">Event Note: </h4>
+                        <h5 className="answer">{event.note}</h5>
                       </div>
-                      <div className="titleAndAnsw">
-                        <h4>Location: </h4>
-                        <h5>{event.location}</h5>
+                      <div className="title-answ-main">
+                        <h4 className="text">Location: </h4>
+                        <h5 className="answer">{event.location}</h5>
                       </div>
                       <div className="buttons">
                         <button

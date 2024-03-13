@@ -5,57 +5,66 @@
   border-radius: 5px;
 }
 .eventFormDiv {
-  width: 300px;
-  .showPupdateDiv {
-    padding-right: 10px;
-    div {
-      margin-top: 5px;
-      h5 {
-        font-weight: $font-weight;
+  .update-form {
+    .show-update-main {
+      position: relative;
+      height: 340px;
+      .title-Answ {
+        margin-top: 5px;
+        display: flex;
+        h4 {
+          text-align: left;
+          padding-right: 9vh;
+          padding-bottom: 20px;
+        }
+        h5 {
+          padding-top: 5px;
+          font-weight: $font-weight;
+        }
+        .hourInput {
+          background-color: $main-background-color;
+          margin-left: 2vh;
+          border: 1px solid #006bb3;
+          border-radius: 10px;
+          @include size(6vh, 40px);
+        }
+        .nameInput {
+          position: absolute;
+          right: 0;
+          background-color: $main-background-color;
+          border: 1px solid #006bb3;
+          border-radius: 10px;
+          @include size(15vh, 40px);
+        }
+        .noteInput {
+          position: absolute;
+          right: 0;
+          background-color: #fff;
+          border: 1px solid #006bb3;
+          border-radius: 10px;
+          @include size(15vh, 40px);
+        }
+        .locaInput {
+          position: absolute;
+          right: 0;
+          margin-bottom: 30px;
+          background-color: $main-background-color;
+          border: 1px solid #006bb3;
+          border-radius: 10px;
+          @include size(15vh, 40px);
+        }
       }
-
-      .hourInput {
-        margin-left: 50px;
-        background-color: $creamColor;
-        border: none;
-        border-radius: 10px;
-        box-shadow: 0px 0px 20px $greenColor;
-        @include size(15vw, 40px);
+      .buttonUpdate {
+        position: relative;
+        left: 50px;
+        top: 20px;
+        width: 180px;
+        height: 40px;
       }
-      .nameInput {
-        margin-top: 10px;
-        margin-left: 40px;
-        background-color: $creamColor;
-        border: none;
-        border-radius: 10px;
-        box-shadow: 0px 0px 20px $greenColor;
-        @include size(15vw, 40px);
-      }
-      .noteInput {
-        margin-top: 10px;
-        margin-left: 53px;
-        background-color: $creamColor;
-        border: none;
-        border-radius: 10px;
-        box-shadow: 0px 0px 20px $greenColor;
-        @include size(15vw, 40px);
-      }
-      .locaInput {
-        margin-bottom: 10px;
-        margin-left: 15px;
-        background-color: $creamColor;
-        border: none;
-        border-radius: 10px;
-        box-shadow: 0px 0px 20px $greenColor;
-        @include size(15vw, 40px);
-      }
-    }
-    .buttonUpdate {
-      width: 180px;
-      height: 40px;
     }
   }
-  form {
+
+  .createEvent-form {
     position: relative;
     background-color: #e3f2fd;
     padding: 30px 0px 0px 40px;

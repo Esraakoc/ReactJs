@@ -1,16 +1,16 @@
-import {useState} from "react";
+import { useState } from "react";
 import Calendar from "react-calendar";
 import "../style/Calendar.css";
 import EventForm from "./EventForm";
 import ShowEventForm from "./ShowEventForm";
-import {useDispatch, useSelector} from "react-redux";
-import {setFoundData} from "../store/slice/dataSlice";
-import {useUser} from "../UserContext";
+import { useDispatch, useSelector } from "react-redux";
+import { setFoundData } from "../store/slice/dataSlice";
+import { useUser } from "../UserContext";
 
 const MyCalendar = () => {
-  const {user} = useUser();
+  const { user } = useUser();
   const dispatch = useDispatch();
-  const {events} = useSelector((state) => state.user);
+  const { events } = useSelector((state) => state.user);
   //useState value değerlerinin tutulduğu yer
   const [date, setDate] = useState(new Date());
   const [event, setEvent] = useState(false);
@@ -47,14 +47,11 @@ const MyCalendar = () => {
             {show ? (
               <ShowEventForm />
             ) : (
-              <div style={{visibility: "hidden"}}>
+              <div style={{ visibility: "hidden" }}>
                 <ShowEventForm />
               </div>
             )}
-            <Calendar
-              onChange={onChange}
-              value={date}
-            />
+            <Calendar onChange={onChange} value={date} />
             <EventForm date={selectedDate} />
           </div>
         </div>

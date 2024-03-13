@@ -1,4 +1,4 @@
-.button-size, .eventFormDiv form button {
+.button-size, .eventFormDiv .createEvent-form button {
   width: 8vw;
   height: 2vw;
 }
@@ -8,68 +8,73 @@
   border-radius: 5px;
 }
 
-.commonInput, .eventFormDiv form textarea, .eventFormDiv form select, .eventFormDiv form input {
+.commonInput, .eventFormDiv .createEvent-form textarea, .eventFormDiv .createEvent-form select, .eventFormDiv .createEvent-form input {
   margin-bottom: 10px;
   border: 1px solid black;
   border-radius: 5px;
 }
 
-.eventFormDiv {
-  width: 300px;
+.eventFormDiv .update-form .show-update-main {
+  position: relative;
+  height: 340px;
 }
-.eventFormDiv .showPupdateDiv {
-  padding-right: 10px;
-}
-.eventFormDiv .showPupdateDiv div {
+.eventFormDiv .update-form .show-update-main .title-Answ {
   margin-top: 5px;
+  display: flex;
 }
-.eventFormDiv .showPupdateDiv div h5 {
+.eventFormDiv .update-form .show-update-main .title-Answ h4 {
+  text-align: left;
+  padding-right: 9vh;
+  padding-bottom: 20px;
+}
+.eventFormDiv .update-form .show-update-main .title-Answ h5 {
+  padding-top: 5px;
   font-weight: bold;
 }
-.eventFormDiv .showPupdateDiv div .hourInput {
-  margin-left: 50px;
-  background-color: #fefae0;
-  border: none;
+.eventFormDiv .update-form .show-update-main .title-Answ .hourInput {
+  background-color: #fff;
+  margin-left: 2vh;
+  border: 1px solid #006bb3;
   border-radius: 10px;
-  box-shadow: 0px 0px 20px #606c38;
-  width: 15vw;
+  width: 6vh;
   height: 40px;
 }
-.eventFormDiv .showPupdateDiv div .nameInput {
-  margin-top: 10px;
-  margin-left: 40px;
-  background-color: #fefae0;
-  border: none;
+.eventFormDiv .update-form .show-update-main .title-Answ .nameInput {
+  position: absolute;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #006bb3;
   border-radius: 10px;
-  box-shadow: 0px 0px 20px #606c38;
-  width: 15vw;
+  width: 15vh;
   height: 40px;
 }
-.eventFormDiv .showPupdateDiv div .noteInput {
-  margin-top: 10px;
-  margin-left: 53px;
-  background-color: #fefae0;
-  border: none;
+.eventFormDiv .update-form .show-update-main .title-Answ .noteInput {
+  position: absolute;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #006bb3;
   border-radius: 10px;
-  box-shadow: 0px 0px 20px #606c38;
-  width: 15vw;
+  width: 15vh;
   height: 40px;
 }
-.eventFormDiv .showPupdateDiv div .locaInput {
-  margin-bottom: 10px;
-  margin-left: 15px;
-  background-color: #fefae0;
-  border: none;
+.eventFormDiv .update-form .show-update-main .title-Answ .locaInput {
+  position: absolute;
+  right: 0;
+  margin-bottom: 30px;
+  background-color: #fff;
+  border: 1px solid #006bb3;
   border-radius: 10px;
-  box-shadow: 0px 0px 20px #606c38;
-  width: 15vw;
+  width: 15vh;
   height: 40px;
 }
-.eventFormDiv .showPupdateDiv .buttonUpdate {
+.eventFormDiv .update-form .show-update-main .buttonUpdate {
+  position: relative;
+  left: 50px;
+  top: 20px;
   width: 180px;
   height: 40px;
 }
-.eventFormDiv form {
+.eventFormDiv .createEvent-form {
   position: relative;
   background-color: #e3f2fd;
   padding: 30px 0px 0px 40px;
@@ -78,13 +83,13 @@
   box-shadow: 0px 0px 10px black;
   border-radius: 15px;
 }
-.eventFormDiv form h5 {
+.eventFormDiv .createEvent-form h5 {
   font-weight: bold;
 }
-.eventFormDiv form select {
+.eventFormDiv .createEvent-form select {
   margin-right: 10px;
 }
-.eventFormDiv form button {
+.eventFormDiv .createEvent-form button {
   margin-top: 1vw;
   border: none;
   border-radius: 5px;

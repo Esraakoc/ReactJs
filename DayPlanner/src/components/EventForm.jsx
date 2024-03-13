@@ -1,14 +1,14 @@
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import "../style/eventForm.css";
 import FmdGoodIcon from "@mui/icons-material/FmdGood";
 import QueryBuilderIcon from "@mui/icons-material/QueryBuilder";
 import EditNoteIcon from "@mui/icons-material/EditNote";
 import DriveFileRenameOutlineIcon from "@mui/icons-material/DriveFileRenameOutline";
-import {useDispatch, useSelector} from "react-redux";
-import {sendEventActions} from "../Api";
+import { useDispatch, useSelector } from "react-redux";
+import { sendEventActions } from "../Api";
 
-function EventForm({date, eventId, updateOpen, onUpdate}) {
-  const {events} = useSelector((state) => {
+function EventForm({ date, eventId, updateOpen, onUpdate }) {
+  const { events } = useSelector((state) => {
     return state.user;
   });
   // useEffect(() => {
@@ -83,10 +83,7 @@ function EventForm({date, eventId, updateOpen, onUpdate}) {
         const formattedMinute = minute.toString().padStart(2, "0");
         const time = `${formattedHour}:${formattedMinute}`;
         options.push(
-          <option
-            key={time}
-            value={time}
-          >
+          <option key={time} value={time}>
             {time}
           </option>
         );
@@ -103,145 +100,126 @@ function EventForm({date, eventId, updateOpen, onUpdate}) {
         <>
           {foundEvent.map((event, item) => {
             return (
-              <div
-                key={item}
-                className="showPupdateDiv"
-              >
-                <div className="titleAndAnsw">
-                  <h4>Date: </h4>
-                  <h5>{event.date}</h5>
+              <form className="update-form">
+                <div key={item} className="show-update-main">
+                  <div className="title-Answ">
+                    <h4>Date: </h4>
+                    <h5>{event.date}</h5>
+                  </div>
+                  <div className="title-Answ">
+                    <h4>Hour: </h4>
+                    <input
+                      className="hourInput"
+                      value={hour1}
+                      onChange={(e) => setHour1(e.target.value)}
+                      placeholder={event.hour1}
+                    />
+                    <input
+                      className="hourInput"
+                      value={hour2}
+                      onChange={(e) => setHour2(e.target.value)}
+                      placeholder={event.hour1}
+                    />
+                    <input
+                      className="hourInput"
+                      value={hour3}
+                      onChange={(e) => setHour3(e.target.value)}
+                      placeholder={event.hour1}
+                    />
+                  </div>
+                  <div className="title-Answ">
+                    <h4>Event Name: </h4>
+                    <input
+                      className="nameInput"
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
+                      placeholder={event.name}
+                    />
+                  </div>
+                  <div className="title-Answ">
+                    <h4>Event Note: </h4>
+                    <input
+                      className="noteInput"
+                      value={note}
+                      onChange={(e) => setNote(e.target.value)}
+                      placeholder={event.note}
+                    />
+                  </div>
+                  <div className="title-Answ">
+                    <h4>Location: </h4>
+                    <input
+                      className="locaInput"
+                      value={location}
+                      onChange={(e) => setLocation(e.target.value)}
+                      placeholder={event.location}
+                    />
+                  </div>
+                  <div className="buttons">
+                    <button
+                      className="buttonUpdate"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        if (updateOpen) {
+                          onUpdate(
+                            eventId,
+                            event.date,
+                            hour1,
+                            hour2,
+                            hour3,
+                            name,
+                            note,
+                            location
+                          );
+                        } else {
+                          onUpdate(
+                            eventId,
+                            event.date,
+                            event.hour1,
+                            event.hour2,
+                            event.hour3,
+                            event.name,
+                            event.note,
+                            event.location
+                          );
+                        }
+                      }}
+                    >
+                      Complete the Update
+                    </button>
+                  </div>
                 </div>
-                <div className="titleAndAnsw">
-                  <h4>Hour: </h4>
-                  <input
-                    className="hourInput"
-                    value={hour1}
-                    onChange={(e) => setHour1(e.target.value)}
-                    placeholder={event.hour1}
-                  />
-                  <input
-                    className="hourInput"
-                    value={hour2}
-                    onChange={(e) => setHour2(e.target.value)}
-                    placeholder={event.hour1}
-                  />
-                  <input
-                    className="hourInput"
-                    value={hour3}
-                    onChange={(e) => setHour3(e.target.value)}
-                    placeholder={event.hour1}
-                  />
-                </div>
-                <div className="titleAndAnsw">
-                  <h4>Event Name: </h4>
-                  <input
-                    className="nameInput"
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                    placeholder={event.name}
-                  />
-                </div>
-                <div className="titleAndAnsw">
-                  <h4>Event Note: </h4>
-                  <input
-                    className="noteInput"
-                    value={note}
-                    onChange={(e) => setNote(e.target.value)}
-                    placeholder={event.note}
-                  />
-                </div>
-                <div className="titleAndAnsw">
-                  <h4>Location: </h4>
-                  <input
-                    className="locaInput"
-                    value={location}
-                    onChange={(e) => setLocation(e.target.value)}
-                    placeholder={event.location}
-                  />
-                </div>
-                <div className="buttons">
-                  <button
-                    className="buttonUpdate"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      if (updateOpen) {
-                        onUpdate(
-                          eventId,
-                          event.date,
-                          hour1,
-                          hour2,
-                          hour3,
-                          name,
-                          note,
-                          location
-                        );
-                      } else {
-                        onUpdate(
-                          eventId,
-                          event.date,
-                          event.hour1,
-                          event.hour2,
-                          event.hour3,
-                          event.name,
-                          event.note,
-                          event.location
-                        );
-                      }
-                    }}
-                  >
-                    Complete the Update
-                  </button>
-                </div>
-              </div>
+              </form>
             );
           })}
         </>
       ) : (
-        <form onSubmit={handleFormSubmit}>
+        <form onSubmit={handleFormSubmit} className="createEvent-form">
           <div>
             <h5>
               <DriveFileRenameOutlineIcon /> Event Name
             </h5>
-            <input
-              value={name}
-              onChange={handleChangeName}
-            />
+            <input value={name} onChange={handleChangeName} />
             <h5>
               <QueryBuilderIcon /> Hour
             </h5>
-            <select
-              value={hour1}
-              onChange={handleSelectChange}
-            >
+            <select value={hour1} onChange={handleSelectChange}>
               {generateOptions()}
             </select>
-            <select
-              value={hour2}
-              onChange={handleSelectSecondChange}
-            >
+            <select value={hour2} onChange={handleSelectSecondChange}>
               {generateOptions()}
             </select>
-            <select
-              value={hour3}
-              onChange={handleSelectThirdChange}
-            >
+            <select value={hour3} onChange={handleSelectThirdChange}>
               {generateOptions()}
             </select>
             <h5>
               <EditNoteIcon /> Note
             </h5>
-            <textarea
-              value={note}
-              onChange={handleChangeNote}
-            />
+            <textarea value={note} onChange={handleChangeNote} />
             <h5>
               <FmdGoodIcon />
               Location
             </h5>
-            <input
-              value={location}
-              onChange={handleChangeLocation}
-            />
+            <input value={location} onChange={handleChangeLocation} />
             <div>
               <button>Add to Calendar</button>
             </div>
