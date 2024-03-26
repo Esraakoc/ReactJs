@@ -9,7 +9,7 @@ function AboutUs() {
   return (
     <div className="aboutUs-general">
       <div className="img-container">
-        <img src={background} />
+        <img src={background} className="main-img1" />
         <div className="aboutus-div">
           <h1>About Us</h1>
           <p>
@@ -46,21 +46,12 @@ function AboutUs() {
             </p>{" "}
           </div>
           <div className="images">
-            <div style={{display: "flex"}}>
-              <img
-                src={photo4}
-                className="images1"
-              />
-              <img
-                src={photo6}
-                className="images2"
-              />
+            <div style={{ display: "flex" }}>
+              <img src={photo4} className="images1" />
+              <img src={photo6} className="images2" />
             </div>
 
-            <img
-              src={photo5}
-              className="images3"
-            />
+            <img src={photo5} className="images3" />
           </div>
         </div>
       </div>

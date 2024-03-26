@@ -47,8 +47,11 @@
 .navbarDiv nav .navbarLink:hover {
   text-decoration: underline;
 }
-.navbarDiv .createBtn {
+.navbarDiv .lagoutBtn {
   position: absolute;
   right: 80px;
   top: 30px;
+}
+.navbarDiv .lagoutBtn:hover {
+  background-color: #eb2d3a;
 }/*# sourceMappingURL=navbar.css.map */

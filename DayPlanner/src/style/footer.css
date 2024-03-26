@@ -10,7 +10,6 @@
 
 .footerDiv {
   position: relative;
-  bottom: 0;
   margin-top: auto;
   z-index: 2;
   width: 100%;
@@ -22,6 +21,13 @@
   font-size: 20px;
   display: inline-block;
   cursor: pointer;
+}
+.footerDiv .aboutUs-link .home-icon-btn {
+  margin-bottom: 30px;
+  font-size: 25px;
+}
+.footerDiv .aboutUs-link .home-icon-btn:hover {
+  opacity: 0.2;
 }
 .footerDiv .socialMedia {
   display: inline-block;
@@ -44,6 +50,9 @@
 }
 .footerDiv .socialMedia ul li a svg {
   font-size: 23px;
+}
+.footerDiv .socialMedia ul li a:hover {
+  opacity: 0.7;
 }
 .footerDiv .dropdown {
   box-sizing: border-box;

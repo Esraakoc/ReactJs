@@ -2,7 +2,6 @@
 
 .footerDiv {
   position: relative;
-  bottom: 0;
   margin-top: auto;
   z-index: 2;
   width: 100%;
@@ -14,6 +13,13 @@
     font-size: 20px;
     display: inline-block;
     cursor: pointer;
+    .home-icon-btn {
+      margin-bottom: 30px;
+      font-size: 25px;
+    }
+    .home-icon-btn:hover {
+      opacity: 0.2;
+    }
   }
   .socialMedia {
     display: inline-block;
@@ -33,6 +39,9 @@
           svg {
             font-size: 23px;
           }
+        }
+        a:hover {
+          opacity: 0.7;
         }
       }
     }

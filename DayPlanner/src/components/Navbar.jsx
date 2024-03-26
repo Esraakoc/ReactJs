@@ -28,7 +28,7 @@ function Navbar() {
               Show Plans
             </Link>
           </nav>
-          <button className="btn createBtn" onClick={handleLogout}>
+          <button className="btn lagoutBtn" onClick={handleLogout}>
             <CiLogout />
             Lagout
           </button>

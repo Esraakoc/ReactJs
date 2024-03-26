@@ -18,10 +18,7 @@ function Footer() {
     <div className="footerDiv">
       <div className="aboutUs-link">
         <div onClick={() => navigate("/")}>
-          <IoMdHome
-            href="/"
-            style={{ marginBottom: "30px", fontSize: "25px" }}
-          />
+          <IoMdHome href="/" className="home-icon-btn" />
         </div>
         <div>
           <Link to="/aboutUs">AboutUs</Link>
