@@ -3,7 +3,7 @@
   height: 2vw;
 }
 
-.borderShow, .showPdiv .showPmap .buttons .buttonUpdate, .showPdiv .showPmap .buttons .buttonDelete, .showPdiv .showPsearch button {
+.borderShow, .showPdiv .showPmap-main .showPmap .buttons .buttonUpdate, .showPdiv .showPmap-main .showPmap .buttons .buttonDelete, .showPdiv .showPsearch button {
   border: none;
   border-radius: 5px;
 }
@@ -45,53 +45,54 @@
   top: 30px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
 }
-.showPdiv .showPmap {
+.showPdiv .showPmap-main .showPmap {
   position: relative;
   flex: 0 0 calc(25% - 20px);
   box-shadow: 0px 0px 5px black;
   padding: 30px;
-  margin: 10px 30px 2vw 10px;
+  margin: 3vw 30px 2vw 10px;
   background-color: #e3f2fd;
   border-radius: 5px;
   text-align: center;
 }
-.showPdiv .showPmap .title-answ-main {
+.showPdiv .showPmap-main .showPmap .title-answ-main {
   display: flex;
+  flex-wrap: wrap;
   text-align: center;
 }
-.showPdiv .showPmap .title-answ-main .hour-text {
+.showPdiv .showPmap-main .showPmap .title-answ-main .hour-text {
   color: black;
   font-weight: 500;
 }
-.showPdiv .showPmap .title-answ-main .hour-answer {
+.showPdiv .showPmap-main .showPmap .title-answ-main .hour-answer {
   box-sizing: border-box;
   color: black;
   font-weight: 400;
   padding-top: 4px;
   padding-right: 10px;
 }
-.showPdiv .showPmap .title-answ-main .text {
+.showPdiv .showPmap-main .showPmap .title-answ-main .text {
   color: black;
   font-weight: 500;
 }
-.showPdiv .showPmap .title-answ-main .answer {
+.showPdiv .showPmap-main .showPmap .title-answ-main .answer {
   color: black;
   font-weight: 400;
   padding-top: 4px;
   padding-left: 25px;
 }
-.showPdiv .showPmap .buttons {
+.showPdiv .showPmap-main .showPmap .buttons {
   position: absolute;
   right: 10px;
 }
-.showPdiv .showPmap .buttons .buttonDelete {
+.showPdiv .showPmap-main .showPmap .buttons .buttonDelete {
   margin-right: 20px;
   background-color: brown;
   color: white;
 }
-.showPdiv .showPmap .buttons .buttonUpdate {
+.showPdiv .showPmap-main .showPmap .buttons .buttonUpdate {
   margin-right: 20px;
   background-color: #0d47a1;
   color: white;

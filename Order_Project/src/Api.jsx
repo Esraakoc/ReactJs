@@ -50,7 +50,7 @@ export const deleteCartDataActions = (id) => async (dispatch) => {
 //Sepeti boşaltma işlemi; for döngüsü ile bütün cart yapısındaki datalrı sildik
 //menü'deki quantity değeri 0'dan büyük olanların quantity değerini 0 yaptık
 export const clearCartActions = () => async (dispatch, getState) => {
-  const {carts, menus} = getState().menu;
+  const { carts, menus } = getState().menu;
 
   for (const cart of carts) {
     await axios.delete(`http://localhost:8000/carts/${cart.id}`);
@@ -59,7 +59,7 @@ export const clearCartActions = () => async (dispatch, getState) => {
     menus.map(async (menu) => {
       if (menu.quantity > 0) {
         // Menü nesnesini klonlayın ve quantity'yi sıfırlayın
-        const updatedMenu = {...menu, quantity: 0};
+        const updatedMenu = { ...menu, quantity: 0 };
         await axios.put(`http://localhost:8000/pizzas/${menu.id}`, updatedMenu);
       }
     });

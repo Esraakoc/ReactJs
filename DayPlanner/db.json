@@ -2,18 +2,7 @@
   "event": [
     {
       "date": "Mon Feb 05 2024",
-      "name": "gsdgsd",
-      "hour1": "01:00",
-      "hour2": "02:30",
-      "hour3": "06:30",
-      "note": "gsdgsg",
-      "location": "sdgsdg",
-      "id": "7",
-      "choice1": 0,
-      "choice2": 0,
-      "choice3": 0,
-      "none": 0,
-      "totalChocice": 0
+      "id": "7"
     },
     {
       "date": "Fri Feb 16 2024",
@@ -183,6 +172,21 @@
       "none": 1,
       "totalChocice": 6,
       "id": "20"
+    },
+    {
+      "id": "0a22",
+      "date": "Fri Mar 29 2024",
+      "name": "fdhgf dghsfg fhsdrfh",
+      "hour1": "",
+      "hour2": "",
+      "hour3": "",
+      "note": "fdhgf dghsfg fhsdrfh fdhgf dghsfg fhsdrfh fdhgf dghsfg fhsdrfh fdhgf dghsfg fhsdrfh fdhgf dghsfg fhsdrfh fdhgf dghsfg fhsdrfh",
+      "location": " fdhgf dghsfg fhsdrfh fdhgf dghsfg fhsdrfh fdhgf dghsfg fhsdrfh fdhgf dghsfg fhsdrfh fdhgf dghsfg fhsdrfh fdhgf dghsfg fhsdrfh",
+      "choice1": 0,
+      "choice2": 0,
+      "choice3": 0,
+      "none": 0,
+      "totalChocice": 0
     }
   ],
   "users": [

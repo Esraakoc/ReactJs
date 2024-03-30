@@ -15,7 +15,7 @@
       "description": "(The trend is valid for pizzas. There is a price difference when changing the category.)",
       "img": "./src/images/campaigns/buyuk-boy-pizza-cokomania-1-lt-pepsi.jpg",
       "price": 380,
-      "quantity": 1,
+      "quantity": 0,
       "category": "campaigns Pizzas"
     },
     {
@@ -24,7 +24,7 @@
       "description": "(The price is valid for Trend pizzas. There is a price difference when the category is changed.)",
       "img": "./src/images/campaigns/buyuk-pizza-1-lt-icecek-2-cartedor.jpg",
       "price": 370,
-      "quantity": 2,
+      "quantity": 1,
       "category": "campaigns Pizzas"
     },
     {
@@ -69,7 +69,7 @@
       "description": "Pizza sauce, mozzarella cheese, sausage, mushrooms, olives",
       "img": "./src/images/Pfavori/4-mevsim.jpg",
       "price": 170,
-      "quantity": 0,
+      "quantity": 1,
       "category": "favorites Pizzas"
     },
     {
@@ -413,17 +413,17 @@
       "description": "(The price is valid for Trend pizzas. There is a price difference when the category is changed.)",
       "img": "./src/images/campaigns/buyuk-pizza-1-lt-icecek-2-cartedor.jpg",
       "price": 370,
-      "quantity": 2,
+      "quantity": 1,
       "category": "campaigns Pizzas"
     },
     {
-      "id": "campaigns2",
-      "title": "Large Pizza + Çokomania + Pepsi",
-      "description": "(The trend is valid for pizzas. There is a price difference when changing the category.)",
-      "img": "./src/images/campaigns/buyuk-boy-pizza-cokomania-1-lt-pepsi.jpg",
-      "price": 380,
+      "id": "favori3",
+      "title": "4 Seasons (Medium)",
+      "description": "Pizza sauce, mozzarella cheese, sausage, mushrooms, olives",
+      "img": "./src/images/Pfavori/4-mevsim.jpg",
+      "price": 170,
       "quantity": 1,
-      "category": "campaigns Pizzas"
+      "category": "favorites Pizzas"
     }
   ]
 }
