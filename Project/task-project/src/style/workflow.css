@@ -1,0 +1,69 @@
+.workFlowDiv{
+    background-color: #F0F0F0;
+    width: 100%;
+    height: 100vh;
+}
+.workFlowMain{
+    position: relative;
+    top: 6%;
+    left: 6vw;
+}
+.workFlowMain h1{
+    color:#14144F;
+} 
+.card{
+    border-radius: 15px !important;
+    min-height: 215px !important;
+    position: relative !important;
+    top:8vh !important;
+} 
+.container{
+    display: flex !important;
+    justify-content: center !important;
+}
+.taskCard-back{ 
+    cursor: pointer ;
+    background-color: #EDA122 !important;
+} 
+.differentBack{
+    cursor: pointer ;
+    background-color:#d83963 !important;
+} 
+.differentBackTask{
+    cursor: pointer ;
+    background-color:  #5399c2 !important;
+}
+.taskCard-back.appointedBack{
+    background-color: #acd41a;
+}
+.taskCard-back:hover{
+    background-color: #F5B94A !important;
+}
+
+.paginationDiv{
+    display: flex;
+    justify-content: center;
+    
+}
+.titleCardtype{
+    color: #EDA122;
+    margin-bottom: 15px !important;
+}
+.gridtask{
+    position: relative;
+}
+.paginationDiv {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.paginationButton,
+.paginationNextButton {
+    margin: 0 8px;
+}
+
+.paginationInfo {
+    flex-grow: 1;
+    text-align: center;
+}

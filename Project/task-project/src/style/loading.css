@@ -1,0 +1,14 @@
+.loadingDiv{
+    height: 100vh;
+}
+.loadingP{
+    position: absolute;
+    top: 10vw;
+    left: 10vw;
+    font-size: large;
+}
+.loadingIcon{
+    position: absolute;
+    top: 12vw;
+    left: 10vw;
+}

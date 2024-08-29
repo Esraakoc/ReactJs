@@ -1,0 +1,21 @@
+.notificationContainer {
+position: absolute;
+top: 50px;
+right: 250px;
+width: 300px;
+max-height: 400px;
+overflow-y: auto;
+background-color: #fff; 
+box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+z-index: 1300;
+padding: 16px; 
+}
+  
+.notificationRoot {
+width: 100%;
+}
+
+.notificationHeading {
+font-size: 15px; 
+font-weight: 400;
+}

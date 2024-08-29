@@ -1,0 +1,30 @@
+.navbarDiv{
+    background-color: #FFFFFF;
+    width: 100%;
+    z-index: 2;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 5px ; 
+}
+.np-icons{  
+    display: flex;
+    gap: 5vh;
+    align-items: center;
+    margin-right: 10vw;
+}
+.notification-icon{
+    cursor: pointer;
+    font-size: 26px; 
+}
+.profil-icon{
+    padding-top: 5px;
+}
+.logout-button{
+    margin-right: 2vw;
+}
+.profilIcon{
+    cursor: pointer;
+    display: flex;
+}

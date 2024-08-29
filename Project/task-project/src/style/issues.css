@@ -1,0 +1,93 @@
+.issuesMain{
+  position: relative;
+  top: 6%;
+  left: 6vw;
+
+}
+.issuesDiv{
+  padding: 50px 40px 10px 30px;
+  position: relative;
+}
+.MuiDataGrid-cell {
+  font-size: 12px;  
+}
+.MuiDataGrid-columnHeader {
+  font-size: 14px; 
+}
+.Modal { 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background: white;
+  border-radius: 4px;
+  max-width: 500px;
+  width: 100%;
+  z-index: 1001; 
+}
+.Overlay {
+  background: rgba(0, 0, 0, 0.5); 
+  position: fixed;
+  top: 0;
+  left: 0; 
+  right: 0;
+  bottom: 0;
+  z-index: 1000; 
+}
+.statusAndGridContainer{
+  display: flex;
+  margin-top: 4vh;
+}
+.gridContainer{
+  width: 22vh; 
+}
+.issuesBtnDiv{
+  display: flex;
+  position: absolute;
+  left: 40px;
+  gap: 10px;
+} 
+.issueAdminBtn{
+  display: flex;
+  gap: 10px;
+}
+.updateIssueModal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 600px;
+  padding: 20px; 
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.updateIssueOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.updateAssignBtn{
+  margin-top: 10px !important;
+  height: 30px;
+}
+.closeBtn{ 
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out; /
+}
+
+.closeBtn:hover {
+  transform: scale(1.2);
+}
+.btnDelete{
+  background-color: #f44336!important;
+  color: white !important;
+}

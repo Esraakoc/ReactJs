@@ -1,0 +1,46 @@
+.sidebarDiv {
+  background-color: #14144F;
+  height: 100%;
+  width: 12%;
+  padding-top: 20px;
+}
+.sidebarDiv.closed {
+  width: 4%; 
+}
+.icons{
+  vertical-align: middle; 
+} 
+.link{ 
+  padding: 15px 10px 15px 15px ;
+  margin-bottom: 2vw;
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: large;
+  transition: background-color 0.3s ease;
+}
+.closed .link .line-text {
+  display: none; 
+}
+
+.link:hover{
+  background-color: rgba(255, 255, 255, 0.522); 
+}
+.line-text{
+  vertical-align: middle; 
+}
+.show-btn{
+  position: relative;
+  left: 10px;
+  border: none;
+  background-color: #14144F;
+  cursor: pointer;
+}
+.show-btn-icon{
+  font-size: 1rem; 
+  color: white;
+}
+.navbarSide{
+  position: relative;
+  top: 50px;
+}
